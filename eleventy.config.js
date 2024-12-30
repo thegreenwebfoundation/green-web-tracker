@@ -4,6 +4,8 @@ const dev = process.env.ELEVENTY_RUN_MODE === 'serve';
 
 export default function(eleventyConfig) {
     eleventyConfig.setInputDirectory('src')
+    eleventyConfig.addWatchTarget("./src/styles/");
+
     if (dev) {
         eleventyConfig.setDataDirectory('_dev-data');
     }
@@ -37,7 +39,6 @@ export default function(eleventyConfig) {
     });
 
     eleventyConfig.addAsyncFilter("getGreenStatus", async (result, site) => {
-        console.log({result, site});
         let domain = new URL(site).hostname;
         return result.greenDomains.includes(domain);
     });

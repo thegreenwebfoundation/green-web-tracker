@@ -4,7 +4,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "eleventy --serve"
+    "watch:11ty": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "watch:postcss": "postcss src/styles/*.css --dir _site/css --watch",
+    "build:postcss": "postcss src/styles/*.css --dir _site/css",
+    "start": "npm-run-all build:postcss --parallel watch:*",
+    "build": "npm-run-all build:postcss build:eleventy",
+    "postbuild": "postcss _site/css/*.css -u autoprefixer cssnano -r --no-map"
   },
   "keywords": [],
   "author": "Fershad Irani <itsfish@fershad.com>",
@@ -15,6 +21,13 @@
     "@11ty/eleventy-fetch": "^5.0.1",
     "@tgwf/co2": "^0.16.4",
     "fast-glob": "^3.3.2",
-    "p-throttle": "^7.0.0"
+    "p-throttle": "^7.0.0",
+    "open-props": "^1.7.9",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "postcss-jit-props": "^1.0.15",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "npm-run-all": "^4.1.5"
   }
 }
