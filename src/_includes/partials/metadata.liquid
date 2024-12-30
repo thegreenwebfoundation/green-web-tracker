@@ -1,0 +1,21 @@
+{% capture pageTitle %}
+    {{title}} - {{site.title}}
+{% endcapture%}
+{% if site.title == title %}
+  {% assign pageTitle = title %}
+{% endif %}
+
+{% assign siteTitle = site.title %}
+
+{% if metaTitle %}
+  {% assign pageTitle = metaTitle %}
+{% endif %}
+
+{% unless description %}
+  {% assign description = summary %}
+{% endunless %}
+
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ description }}" />
+<link rel="canonical" href="https://tracker.greenweb.org/{{ page.url }}" />
+{% comment %} <meta name="theme-color" content="#1c7ed6"> {% endcomment %}
