@@ -11,7 +11,8 @@ layout: "layouts/base.liquid"
       <li>
         <a href="/index/{{ index[0] | slug }}">{{ index[1].name }}</a>
         <p>{{ index[1].description }}</p>
-
+        <p>Total sites: {{ index[1].sites | size }}</p>
+        <p>Total green hosted: {{ index[1].sites | greenHostsCount: index[0] }}</p>
       </li>
     {% endfor %}
   </ul>
