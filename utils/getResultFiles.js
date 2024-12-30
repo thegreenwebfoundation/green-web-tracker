@@ -1,8 +1,8 @@
 import fg from 'fast-glob'
 
-export const getResultFiles = async (filename = null) => {
+export const getResultFiles = async (filename = null, dataDir = "_data") => {
     try {
-        const greenCheckResultFiles = filename ? await fg(`src/_data/checks/green_${filename}_*.json`) : await fg('src/_data/checks/*.json');
+        const greenCheckResultFiles = filename ? await fg(`src/${dataDir}/checks/green_${filename}_*.json`) : await fg(`src/${dataDir}/checks/*.json`);
     
             const greenCheckResults = greenCheckResultFiles.map(async (file) => {
                 const data = await import(`../${file}`, { with: { type: 'json' } }).then((data) => {
