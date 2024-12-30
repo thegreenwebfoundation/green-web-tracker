@@ -1,0 +1,17 @@
+{
+    "name": "Sample Index",
+    "description": "This is a sample JSON file for a list of sites to check in this index.",
+    "sites": [
+        "https://www.thegreenwebfoundation.org",
+        "https://www.fershad.com",
+        "https://www.google.com",
+        "https://www.yahoo.com",
+        "https://www.bing.com"
+    ],
+    "contributors": [
+        "Fershad Irani",
+        "John Doe",
+        "Jane Doe"
+    ],
+    "source": null
+}

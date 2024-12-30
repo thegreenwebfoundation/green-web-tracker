@@ -1,1 +1,12 @@
-<h1>Hello, World</h1>
+---
+layout: "layouts/base.liquid"
+---
+<h1>Green Web Tracker</h1>
+<p>Tracking the progress of the internet towards 100% fossil free hosting. Updated weekly.</p>
+
+<section id="indexes">
+  <h2>Indexes</h2>
+  {% for index in indexes %}
+    <a href="{{ index[1].name | slug }}">{{ index[1].name }}</a>
+  {% endfor %}
+</section>
