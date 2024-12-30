@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "eleventy --serve"
   },
   "keywords": [],
   "author": "Fershad Irani <itsfish@fershad.com>",
@@ -13,6 +13,8 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-fetch": "^5.0.1",
-    "@tgwf/co2": "^0.16.4"
+    "@tgwf/co2": "^0.16.4",
+    "fast-glob": "^3.3.2",
+    "p-throttle": "^7.0.0"
   }
 }
