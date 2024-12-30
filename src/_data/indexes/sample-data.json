@@ -9,9 +9,14 @@
         "https://www.bing.com"
     ],
     "contributors": [
-        "Fershad Irani",
-        "John Doe",
-        "Jane Doe"
+        {
+            "name": "Fershad Irani",
+            "github": "fershad"
+        },
+        {
+            "name": "John Doe",
+            "github": "johndoe"
+        }
     ],
     "source": null
 }

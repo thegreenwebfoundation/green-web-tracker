@@ -1,0 +1,36 @@
+---js
+{
+    layout: "layouts/base.liquid",
+    pagination: {
+        data: "indexes",
+        // before: (data) => {
+        //     // console.log(indexes);
+        //     console.log(data);
+        //     return indexes;
+        // },
+        size: 1,
+        alias: "index",
+    },
+    permalink: "/index/{{ index | slug }}/index.html"
+}
+---
+{% assign content = indexes[index] %}
+
+<h1>Index: {{ content.name }}</h1>
+<p>{{ content.description }}</p>
+<small>Contributed by:
+  {% for contrib in content.contributors %}
+    <a href="https://github.com/{{ contrib.github }}">{{ contrib.name }}</a>
+    {% unless forloop.last %},
+    {% endunless %}
+  {% endfor %}
+</small>
+
+<h2>Domains</h2>
+<ul>
+  {% for domain in content.sites %}
+    <li>
+      <a href="{{ domain }}">{{ domain }}</a>
+    </li>
+  {% endfor %}
+</ul>

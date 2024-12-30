@@ -6,7 +6,13 @@ layout: "layouts/base.liquid"
 
 <section id="indexes">
   <h2>Indexes</h2>
-  {% for index in indexes %}
-    <a href="{{ index[1].name | slug }}">{{ index[1].name }}</a>
-  {% endfor %}
+  <ul>
+    {% for index in indexes %}
+      <li>
+        <a href="/index/{{ index[0] | slug }}">{{ index[1].name }}</a>
+        <p>{{ index[1].description }}</p>
+
+      </li>
+    {% endfor %}
+  </ul>
 </section>
