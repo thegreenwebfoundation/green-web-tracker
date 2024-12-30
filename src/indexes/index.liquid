@@ -22,13 +22,15 @@ permalink: "/index/{{ index | slug }}/index.html"
 {% assign results = index | getIndexResults %}
 
 <p>This index has been checked {{ results | size }} times.</p>
-<ul>
+<ul class="domains">
   {% for domain in content.sites %}
     <li>
-      <span>{{ results | latestResult | getGreenStatus: domain }}</span>
-      <a href="{{ domain }}">{{ domain }}</a>
+      <span class="title">
+        <a href="{{ domain }}">{{ domain }}</a>
+      </span>
       {% for result in results %}
-        <span>{{ result | getGreenStatus: domain }}</span>
+        {% assign greenFlag = result | getGreenStatus: domain %}
+        <span class="result" data-green="{{ greenFlag }}"></span>
       {% endfor %}
     </li>
   {% endfor %}
