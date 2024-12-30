@@ -1,13 +1,10 @@
----js
-{
-    layout: "layouts/base.liquid",
-    pagination: {
-        data: "indexes",
-        size: 1,
-        alias: "index",
-    },
-    permalink: "/index/{{ index | slug }}/index.html"
-}
+---
+layout: "layouts/base.liquid"
+pagination:
+    data: "indexes"
+    size: 1
+    alias: "index"
+permalink: "/index/{{ index | slug }}/index.html"
 ---
 {% assign content = indexes[index] %}
 
