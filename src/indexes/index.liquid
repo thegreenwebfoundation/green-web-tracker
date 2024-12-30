@@ -19,10 +19,17 @@ permalink: "/index/{{ index | slug }}/index.html"
 </small>
 
 <h2>Domains</h2>
+{% assign results = index | getIndexResults %}
+
+<p>This index has been checked {{ results | size }} times.</p>
 <ul>
   {% for domain in content.sites %}
     <li>
+      <span>{{ results | latestResult | getGreenStatus: domain }}</span>
       <a href="{{ domain }}">{{ domain }}</a>
+      {% for result in results %}
+        <span>{{ result | getGreenStatus: domain }}</span>
+      {% endfor %}
     </li>
   {% endfor %}
 </ul>
