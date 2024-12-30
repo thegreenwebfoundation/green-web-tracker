@@ -6,13 +6,18 @@ layout: "layouts/base.liquid"
 
 <section id="indexes">
   <h2>Indexes</h2>
-  <ul>
+  <p>A set of public indexes tracking various types of websites. Submit your own!</p>
+  <ul class="index-list">
     {% for index in indexes %}
       <li>
-        <a href="/index/{{ index[0] | slug }}">{{ index[1].name }}</a>
+        <p class="title">
+          <a href="/index/{{ index[0] | slug }}">{{ index[1].name }}</a>
+        </p>
         <p>{{ index[1].description }}</p>
-        <p>Total sites: {{ index[1].sites | size }}</p>
-        <p>Total green hosted: {{ index[1].sites | greenHostsCount: index[0] }}</p>
+        <div class="stats">
+          <small>Total sites: {{ index[1].sites | size }}</small>
+          <small>Green hosted: {{ index[1].sites | greenHostsCount: index[0] }}</small>
+        </div>
       </li>
     {% endfor %}
   </ul>

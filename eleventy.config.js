@@ -4,6 +4,7 @@ const dev = process.env.ELEVENTY_RUN_MODE === 'serve';
 
 export default function(eleventyConfig) {
     eleventyConfig.setInputDirectory('src')
+    eleventyConfig.addPassthroughCopy({"public": "/"});
     eleventyConfig.addWatchTarget("./src/styles/");
 
     if (dev) {
