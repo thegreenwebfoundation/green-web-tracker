@@ -1,0 +1,36 @@
+---
+layout: "layouts/base.liquid"
+pagination:
+    data: "domainsList"
+    size: 1
+    alias: "domain"
+permalink: "/domain/{{ domain | slug }}/index.html"
+---
+<h1>Domain: {{ domain }}</h1>
+
+Appears in {{ domain | findDomainInIndexes }} {{ domain | findDomainInIndexes | plural: "indexes", "index"  }}.
+
+{% assign results = domain | getDomainResults %}
+
+<div class="table-wrapper">
+  <table class="domain-results">
+    <thead>
+      <tr>
+        <th>Green</th>
+        <th>Test Time</th>
+        <th>Provider</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for result in results %}
+        <tr>
+            <td data-green="{{ result.data[0].green }}">
+                {% assign greenFlag = result.data[0].green %}
+                {% include 'partials/greenFlag.liquid' %}
+            </td>
+            <td><time datetime="{{result.timestamp}}">{{ result.timestamp | date_to_long_string }}</time></td>
+            <td>{{ result.data[0].hosted_by }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>

@@ -34,7 +34,9 @@ permalink: "/index/{{ index | slug }}/index.html"
     <tbody>
       {% for domain in content.sites %}
         <tr>
-          <td class="domain">{{ domain }}</td>
+          <td class="domain">
+            <a href="/domain/{{ domain | toHost | slug }}/">{{ domain }}</a>
+          </td>
           {% for result in results %}
             {% assign greenFlag = result | getGreenStatus: domain %}
             <td data-green="{{ greenFlag }}" title="Domain checked as {{ greenFlag }} on ...">

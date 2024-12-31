@@ -168,33 +168,33 @@ a:focus {
   overflow-x: auto;
 }
 
-table.index-results {
+table {
   /* min-width: 100%; */
   border-collapse: collapse;
 }
 
-table.index-results th,
-table.index-results td {
+table th,
+table td {
   padding: 0.5rem;
   border: 1px solid var(--stone-12);
 }
 
-table.index-results th {
+table th {
   background: var(--stone-1);
 }
 
-table.index-results td:not(.domain) {
+table td:not(.domain) {
   /* background: var(--stone-2); */
   text-align: center;
 }
 
-table.index-results td[data-green="true"] {
+table td[data-green="true"] {
   color: var(--green-12);
   background: var(--green-1);
   opacity: 0.75;
 }
 
-table.index-results td[data-green="false"] {
+table td[data-green="false"] {
   color: var(--gray-12);
   background: var(--gray-3);
   opacity: 0.75;
