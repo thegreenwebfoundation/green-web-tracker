@@ -22,19 +22,27 @@ permalink: "/index/{{ index | slug }}/index.html"
 {% assign results = index | getIndexResults %}
 
 <p>This index has been checked {{ results | size }} times.</p>
-<ul class="domains">
-  {% for domain in content.sites %}
-    <li>
-      <span class="title">
-        <a href="{{ domain }}">{{ domain }}</a>
-      </span>
-      {% for result in results %}
-        {% assign greenFlag = result | getGreenStatus: domain %}
-        <span
-          class="result"
-          data-green="{{ greenFlag }}"
-          title="Domain checked as {{ greenFlag }} on ..."></span>
+
+<div class="table-wrapper">
+  <table class="index-results">
+    <thead>
+      <tr>
+        <th>Domain</th>
+        <th colspan="{{ results | size }}">Results</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for domain in content.sites %}
+        <tr>
+          <td class="domain">{{ domain }}</td>
+          {% for result in results %}
+            {% assign greenFlag = result | getGreenStatus: domain %}
+            <td data-green="{{ greenFlag }}" title="Domain checked as {{ greenFlag }} on ...">
+              {% include 'partials/greenFlag.liquid' %}
+            </td>
+          {% endfor %}
+        </tr>
       {% endfor %}
-    </li>
-  {% endfor %}
-</ul>
+    </tbody>
+  </table>
+</div>

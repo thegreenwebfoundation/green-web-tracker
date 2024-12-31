@@ -1,15 +1,15 @@
 import fg from 'fast-glob';
 
-export const getIndexFiles = async () => {
+export const getIndexFiles = async (dataDir = "_data") => {
     try {
-        const filesToCheck = await fg('src/_data/indexes/*.json');
+        const filesToCheck = await fg(`src/${dataDir}/indexes/*.json`);
 
         // Read the content of each file, and get the list of sites to check
         const sitesToCheck = filesToCheck.map(async (file) => {
             const data = await import(`../${file}`, { with: { type: 'json' } }).then((data) => {
                 return {
                     filepath: file,
-                    filename: file.replace('src/_data/indexes/', '').replace('.json', ''),
+                    filename: file.replace(`src/${dataDir}/indexes/`, '').replace('.json', ''),
                     sites: data.default.sites,
                 };
             });

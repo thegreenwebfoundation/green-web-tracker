@@ -1,4 +1,5 @@
 import {getResultFiles} from './utils/getResultFiles.js'
+import {getIndexFiles} from './utils/getIndexFiles.js'
 
 const dev = process.env.ELEVENTY_RUN_MODE === 'serve';
 
@@ -45,4 +46,21 @@ export default function(eleventyConfig) {
         const greenResults = result.data.filter(data => data.url === domain && data.green);
         return greenResults.length > 0 ? true : false;
     });
+    
+    eleventyConfig.addAsyncShortcode("getUniqueDomains", async () => {
+        const indexFiles = await getIndexFiles("_dev-data");
+        const indexResults = await Promise.allSettled(indexFiles);
+
+        const results = indexResults.map(({ value }) => value);
+        const sites = results.map(result => result.sites).flat();
+        const uniqueSites = [...new Set(sites)];
+
+        return uniqueSites.length;
+    });
+
+    eleventyConfig.addAsyncShortcode("getIndexCount", async () => {
+        const indexFiles = await getIndexFiles("_dev-data");
+        const indexResults = await Promise.allSettled(indexFiles);
+        return indexResults.length;
+    }); 
 };

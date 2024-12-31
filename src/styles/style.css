@@ -12,6 +12,7 @@ main {
   position: relative;
   margin: 0 auto;
   padding-inline: 1.125rem;
+  max-width: var(--size-xl);
 }
 
 header {
@@ -89,6 +90,25 @@ header nav ul {
   color: var(--sand-0);
 }
 
+#intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  /* flex: 1 0 auto; */
+}
+
+#intro aside {
+  flex: 0 1 25rem;
+  background: var(--stone-2);
+  height: 100%;
+  width: 100%;
+  display: block;
+  max-height: 100%;
+  padding-inline: 2rem;
+}
+
 .index-list {
   list-style: none;
   padding: 0;
@@ -144,36 +164,38 @@ a:focus {
   padding-block-start: 0.75rem;
 }
 
-.domains {
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  list-style: none;
-  padding: 0;
+.table-wrapper {
+  overflow-x: auto;
 }
 
-.domains li {
-  display: flex;
-  align-items: center;
+table.index-results {
+  /* min-width: 100%; */
+  border-collapse: collapse;
 }
 
-.domains li .title {
-  margin: 0;
-  margin-inline-end: 0.75rem;
+table.index-results th,
+table.index-results td {
+  padding: 0.5rem;
+  border: 1px solid var(--stone-12);
 }
 
-.domains li .result[data-green="true"] {
+table.index-results th {
+  background: var(--stone-1);
+}
+
+table.index-results td:not(.domain) {
+  /* background: var(--stone-2); */
+  text-align: center;
+}
+
+table.index-results td[data-green="true"] {
+  color: var(--green-12);
   background: var(--green-1);
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  border: 1px solid var(--green-10);
-  height: 1ex;
+  opacity: 0.75;
 }
 
-.domains li .result[data-green="false"] {
-  background: var(--gray-2);
-  padding: 0.25rem 0.5rem;
-  /* border-radius: 0.25rem; */
-  border: 1px solid var(--gray-10);
-  height: 1ex;
+table.index-results td[data-green="false"] {
+  color: var(--gray-12);
+  background: var(--gray-3);
+  opacity: 0.75;
 }

@@ -1,8 +1,15 @@
 ---
 layout: "layouts/base.liquid"
 ---
-<h1>Green Web Tracker</h1>
-<p>Tracking the progress of the internet towards 100% fossil free hosting. Updated weekly.</p>
+<section id="intro">
+  <div class="text">
+    <h1>Green Web Tracker</h1>
+    <p>Tracking the progress of the internet towards 100% fossil free hosting. Updated weekly.</p>
+  </div>
+  <aside>
+    <p>Checking {% getUniqueDomains %} unique domains, across {% getIndexCount %} indexes.</p>
+  </aside>
+</section>
 
 <section id="indexes">
   <h2>Indexes</h2>
