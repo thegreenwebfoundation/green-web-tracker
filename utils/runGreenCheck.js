@@ -36,11 +36,17 @@ const runGreenCheck = async () => {
             }
 
         // Flatten the array of arrays
-        const sitesArray = sites.flat().map((site) => new URL(site).hostname);
+        const sitesArray = sites.flat().map((site) => {
+            try {
+                return new URL(site).hostname
+            } catch (error) {
+                return site;
+            }
+        });
 
         // Group sites into batches of 3
         const sitesBatched = sitesArray.reduce((acc, site, i) => {
-            const index = Math.floor(i / 3);
+            const index = Math.floor(i / 20);
             if (!acc[index]) {
                 acc[index] = [];
             }

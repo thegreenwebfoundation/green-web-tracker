@@ -2,7 +2,7 @@ import {getResultFiles} from './utils/getResultFiles.js'
 import {getIndexFiles} from './utils/getIndexFiles.js'
 
 const dev = process.env.ELEVENTY_RUN_MODE === 'serve';
-const dataDir = dev ? '_dev-data' : '_data';
+const dataDir = '_data';
 
 const indexFiles = await getIndexFiles(dataDir);
 const resultsFiles = await getResultFiles(null, dataDir);
@@ -11,10 +11,6 @@ export default function(eleventyConfig) {
     eleventyConfig.setInputDirectory('src')
     eleventyConfig.addPassthroughCopy({"public": "/"});
     eleventyConfig.addWatchTarget("./src/styles/");
-
-    if (dev) {
-        eleventyConfig.setDataDirectory('_dev-data');
-    }
 
     eleventyConfig.addAsyncFilter("greenHostsCount", async (index, filename) => {
         const greenCheckResults = await Promise.allSettled(resultsFiles);
@@ -42,7 +38,12 @@ export default function(eleventyConfig) {
     });
 
     eleventyConfig.addAsyncFilter("getGreenStatus", async (result, site) => {
-        let domain = new URL(site).hostname;
+        let domain = site;
+        try {
+            domain = new URL(site).hostname;
+        } catch (error) {
+            domain = site;
+        }
 
         const greenResults = result.data.filter(data => data.url === domain && data.green);
         return greenResults.length > 0 ? true : false;
@@ -52,7 +53,14 @@ export default function(eleventyConfig) {
         const indexResults = await Promise.allSettled(indexFiles);
 
         const results = indexResults.map(({ value }) => value);
-        const sites = results.map(result => result.sites).flat();
+        const sites = results.map(result => result.sites).flatMap(site => {
+            try {
+                return new URL(site).hostname
+            } catch (error) {
+                return site;
+            }
+        });
+
         const uniqueSites = [...new Set(sites)];
 
         return uniqueSites.length;
@@ -67,16 +75,28 @@ export default function(eleventyConfig) {
         const indexResults = await Promise.allSettled(indexFiles);
 
         const results = indexResults.map(({ value }) => value);
-        const sites = results.map(result => result.sites).flat();
-        const uniqueSites = [...new Set(sites)].map(site => 
-            new URL(site).hostname
-        )
+        const sites = results.map(result => result.sites).flatMap(site => {
+            try {
+                return new URL(site).hostname
+            } catch (error) {
+                return site;
+            }
+        });
+
+        const uniqueSites = [...new Set(sites)]
 
         return uniqueSites;
     });
 
     eleventyConfig.addFilter("toHost", (url) => {
-        return new URL(url).hostname;
+        let domain = url;
+        try {
+            domain = new URL(url).hostname;
+        } catch (error) {
+            domain = url;
+        }
+
+        return domain;
     });
 
     eleventyConfig.addAsyncFilter("findDomainInIndexes", async (domain) => {
@@ -89,7 +109,13 @@ export default function(eleventyConfig) {
 
         indexes.forEach(index => {
             index.forEach(site => {
-                const siteDomain = new URL(site).hostname;
+                let siteDomain = site;
+                try {
+                    siteDomain = new URL(site).hostname;
+                } catch (error) {
+                    siteDomain = site;
+                }
+
                 if (siteDomain === domain) {
                     indexCount++;
                 }
