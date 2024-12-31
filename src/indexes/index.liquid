@@ -30,7 +30,10 @@ permalink: "/index/{{ index | slug }}/index.html"
       </span>
       {% for result in results %}
         {% assign greenFlag = result | getGreenStatus: domain %}
-        <span class="result" data-green="{{ greenFlag }}"></span>
+        <span
+          class="result"
+          data-green="{{ greenFlag }}"
+          title="Domain checked as {{ greenFlag }} on ..."></span>
       {% endfor %}
     </li>
   {% endfor %}

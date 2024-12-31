@@ -140,6 +140,8 @@ a:focus {
   justify-content: space-between;
   align-items: center;
   margin-block-start: 0.75rem;
+  border-block-start: 1px solid var(--stone-12);
+  padding-block-start: 0.75rem;
 }
 
 .domains {

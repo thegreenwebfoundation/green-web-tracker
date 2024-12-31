@@ -20,7 +20,7 @@ export default function(eleventyConfig) {
             return new Date(b.value.timestamp) - new Date(a.value.timestamp);
         }).shift();
 
-        return previousResults.value.greenDomains.length;
+        return previousResults.value.greenDomains;
     });
 
     eleventyConfig.addAsyncFilter("getIndexResults", async (filename) => {
@@ -41,6 +41,8 @@ export default function(eleventyConfig) {
 
     eleventyConfig.addAsyncFilter("getGreenStatus", async (result, site) => {
         let domain = new URL(site).hostname;
-        return result.greenDomains.includes(domain);
+
+        const greenResults = result.data.filter(data => data.url === domain && data.green);
+        return greenResults.length > 0 ? true : false;
     });
 };
