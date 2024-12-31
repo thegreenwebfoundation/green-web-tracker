@@ -1,0 +1,33 @@
+{
+  "name": "Third-party Video Domains",
+  "description": "Domains used enable video player and streaming functionality.",
+  "sites": [
+    "youtube.com",
+    "ggpht.com",
+    "youtube-nocookie.com",
+    "ytimg.com",
+    "wistia.com",
+    "embedwistia-a.akamaihd.net",
+    "wistia.net",
+    "brightcove.com",
+    "brightcove.net",
+    "zencdn.net",
+    "vimeo.com",
+    "vimeocdn.com",
+    "twitch.tv",
+    "opentok.com",
+    "admanmedia.com"
+  ],
+  "contributors": [
+    {
+      "name": "Fershad Irani",
+      "github": "fershad"
+    }
+  ],
+  "sources": [
+    {
+      "name": "@patrickhulce/third-party-web",
+      "url": "https://github.com/patrickhulce/third-party-web/tree/master"
+    }
+  ]
+}

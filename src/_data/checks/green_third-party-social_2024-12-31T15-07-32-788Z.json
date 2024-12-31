@@ -1,0 +1,1459 @@
+{
+  "timestamp": "2024-12-31T15:07:32.788Z",
+  "sourceFile": "src/_data/indexes/third-party-social.json",
+  "data": [
+    {
+      "url": "facebook.com",
+      "hosted_by": "Facebook",
+      "hosted_by_website": "https://www.facebook.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 475,
+      "modified": "2024-12-31T15:07:01.289774",
+      "supporting_documents": []
+    },
+    {
+      "url": "atlassbx.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:01.316761"
+    },
+    {
+      "url": "fbsbx.com",
+      "hosted_by": "Facebook",
+      "hosted_by_website": "https://www.facebook.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 475,
+      "modified": "2024-12-31T15:07:01.352983",
+      "supporting_documents": []
+    },
+    {
+      "url": "fbcdn-photos-e-a.akamaihd.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:01.475174"
+    },
+    {
+      "url": "facebook.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:01.500738"
+    },
+    {
+      "url": "fbcdn.net",
+      "hosted_by": "Facebook",
+      "hosted_by_website": "https://www.facebook.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 475,
+      "modified": "2024-12-31T15:07:01.540762",
+      "supporting_documents": []
+    },
+    {
+      "url": "cdninstagram.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:01.564555"
+    },
+    {
+      "url": "instagram.com",
+      "hosted_by": "Facebook",
+      "hosted_by_website": "https://www.facebook.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 475,
+      "modified": "2024-12-31T15:07:01.600410",
+      "supporting_documents": []
+    },
+    {
+      "url": "vine.co",
+      "hosted_by": "Amazon Web Services",
+      "hosted_by_website": "https://aws.amazon.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 697,
+      "modified": "2024-12-31T15:07:01.674224",
+      "supporting_documents": [
+        {
+          "id": 87,
+          "title": "Amazon's Cloud Sustainability page",
+          "link": "https://sustainability.aboutamazon.com/environment/the-cloud"
+        },
+        {
+          "id": 88,
+          "title": "Amazon's emissions 2018 methodology paper",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-carbon-methodology-september-2019.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150705Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=3f00657996ea75768ef4cf623228fa3b799314cc1f29724b81f8bdb82c58cb32"
+        },
+        {
+          "id": 89,
+          "title": "Amazon 2020 GHG Verification statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2020-ghg-verification-statement.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150705Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=357a1f02c9eabe1bd7e06441088bfc9ed478d736bf5ee43cd4f5ddd1054902f4"
+        },
+        {
+          "id": 90,
+          "title": "Amazon 2020 Renewable Energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2020-renewable-energy-assurance-statement.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150705Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=32e6f7345916002718d3a8e4a75f92824a2191365656af49d5ff728b23006896"
+        },
+        {
+          "id": 91,
+          "title": "Amazon 2020 reporting standards appendices",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/reporting_standards.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150705Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=d8360115654f940ead1b7aa06d4d8bddd93b3604a32a6f63e4789dbee3b570a0"
+        },
+        {
+          "id": 346,
+          "title": "Amazon 2021 GHG Verification statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2021-ghg-verification.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150705Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=863db2bbb160ec95bc7419f0f5de77fa6104cd40802c2bf045eb5f69dca27f86"
+        },
+        {
+          "id": 347,
+          "title": "Amazon 2021 Renewable Energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2021-renewable-energy-assurance.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150705Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=192b0029055f235eea692d109884316097ed3011ebac6522fee97af7d6f4490a"
+        },
+        {
+          "id": 526,
+          "title": "Amazon's 2022 Sustainability Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/2022-sustainability-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150705Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=3e2030f66c5d7a2c0388019fefea80c16c4380b89410d9ac86be3335230e5b10"
+        },
+        {
+          "id": 527,
+          "title": "Amazon 2022 renewable energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/2022-renewable-energy-assurance.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150705Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1bbe7e1f2e12afe8c4701babde0cce4cc5520fd3a2c22d8dd8e9ee733f821c5d"
+        }
+      ]
+    },
+    {
+      "url": "twimg.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:01.695396"
+    },
+    {
+      "url": "twitpic.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:02.050709"
+    },
+    {
+      "url": "platform.twitter.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:02.132198"
+    },
+    {
+      "url": "syndication.twitter.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:02.212629"
+    },
+    {
+      "url": "addthis.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:02.564643"
+    },
+    {
+      "url": "addthiscdn.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:02.631851"
+    },
+    {
+      "url": "addthisedge.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:02.875910"
+    },
+    {
+      "url": "addtoany.com",
+      "hosted_by": "Cloudflare",
+      "hosted_by_website": "https://www.cloudflare.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 779,
+      "modified": "2024-12-31T15:07:02.900419",
+      "supporting_documents": [
+        {
+          "id": 18,
+          "title": "Blog post - The Climate and Cloudflare",
+          "link": "https://blog.cloudflare.com/the-climate-and-cloudflare/"
+        },
+        {
+          "id": 1264,
+          "title": "Cloudflare 2023 Emissions Inventory",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Cloudflare_2023_Emissions_Inventory.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150705Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1b79a6432e4eff1fdc5809ec412acfa448bba52e7916e185a056a34ac09e54b6"
+        }
+      ]
+    },
+    {
+      "url": "gravatar.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:03.199133"
+    },
+    {
+      "url": "pixfs.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:04.074376"
+    },
+    {
+      "url": "pixnet.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:05.099268"
+    },
+    {
+      "url": "vk.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:04.672466"
+    },
+    {
+      "url": "tumblr.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:04.768587"
+    },
+    {
+      "url": "disqus.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:05.113884"
+    },
+    {
+      "url": "disquscdn.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:05.208371"
+    },
+    {
+      "url": "sharethis.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:05.357460"
+    },
+    {
+      "url": "pinimg.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:05.503561"
+    },
+    {
+      "url": "pinterest.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:05.616806"
+    },
+    {
+      "url": "bizographics.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:05.776431"
+    },
+    {
+      "url": "platform.linkedin.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:05.821483"
+    },
+    {
+      "url": "slideshare.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:06.122903"
+    },
+    {
+      "url": "slidesharecdn.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:06.526486"
+    },
+    {
+      "url": "oribi.io",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:06.922500"
+    },
+    {
+      "url": "shareaholic.com",
+      "hosted_by": "Amazon Web Services",
+      "hosted_by_website": "https://aws.amazon.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 697,
+      "modified": "2024-12-31T15:07:07.200803",
+      "supporting_documents": [
+        {
+          "id": 87,
+          "title": "Amazon's Cloud Sustainability page",
+          "link": "https://sustainability.aboutamazon.com/environment/the-cloud"
+        },
+        {
+          "id": 88,
+          "title": "Amazon's emissions 2018 methodology paper",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-carbon-methodology-september-2019.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=08f74ddd3818c773e6f497543453aea0af524f47fc848e8958abc63e6604ac0a"
+        },
+        {
+          "id": 89,
+          "title": "Amazon 2020 GHG Verification statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2020-ghg-verification-statement.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=02c62920851033da3925a7fa97b3bcd13261e9001bd780c87335ded8a1c01fb5"
+        },
+        {
+          "id": 90,
+          "title": "Amazon 2020 Renewable Energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2020-renewable-energy-assurance-statement.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=d72ce4b64fcff84827232d0c38fffca09298d893de93730f29edc25f06e36295"
+        },
+        {
+          "id": 91,
+          "title": "Amazon 2020 reporting standards appendices",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/reporting_standards.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1b6bc4301687149054589756e9381be35bf66a83dd4156266cd4378fd410bab6"
+        },
+        {
+          "id": 346,
+          "title": "Amazon 2021 GHG Verification statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2021-ghg-verification.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a91e79cea6b8c4f67cbfc83c49159f78713db183cea8abb46575725ed551b853"
+        },
+        {
+          "id": 347,
+          "title": "Amazon 2021 Renewable Energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2021-renewable-energy-assurance.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=132cf03672b6aa9a06dda038cf69007baf48e112170d39b725dc94173aea86bc"
+        },
+        {
+          "id": 526,
+          "title": "Amazon's 2022 Sustainability Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/2022-sustainability-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=119678782830d8f39c918205cb71536e548d64f48c18515170402862b6ddfa34"
+        },
+        {
+          "id": 527,
+          "title": "Amazon 2022 renewable energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/2022-renewable-energy-assurance.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c8e7c436eb823b46169d3f5c75b10d6ded7c4a72e7fa9ae0c0670db7d197e0fc"
+        }
+      ]
+    },
+    {
+      "url": "dsms0mj1bbhn4.cloudfront.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:08.822237"
+    },
+    {
+      "url": "addshoppers.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:09.504990"
+    },
+    {
+      "url": "d3rr3d0n31t48m.cloudfront.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:09.894061"
+    },
+    {
+      "url": "shop.pe",
+      "hosted_by": "Google Inc.",
+      "hosted_by_website": "https://www.google.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 595,
+      "modified": "2024-12-31T15:07:09.990032",
+      "supporting_documents": [
+        {
+          "id": 108,
+          "title": "Sustainability at Google",
+          "link": "https://sustainability.google"
+        },
+        {
+          "id": 139,
+          "title": "Independent verification of Google 2020 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Google_Cloud_-_3degrees_cloud_services_review_statement_final.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9d60dc06afe0b00d0a7c5f52b5e158f815715d81d85e6f20b90afeef21f0dc9e"
+        },
+        {
+          "id": 140,
+          "title": "2021 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2021-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=96980642390c2531c380b3b0f99ffb8a613742686065264ecc04203c1459fb6c"
+        },
+        {
+          "id": 141,
+          "title": "2022 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2022-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=117592eebafea4c9023b55d3aa642d695877025506051e9ff56da8fc319fc4d3"
+        },
+        {
+          "id": 142,
+          "title": "Independent verification of Google 2021 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-fy2021-environmental-indicators-assurance-letter.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=13f9b3c3bd18406943bd5f79eec810adb91f262dc13a8726440c452f309d6804"
+        },
+        {
+          "id": 740,
+          "title": "2023 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2023-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=e8f746937fa3f800affd96d188ae1d5cdd6c28759acc534d812f3d16bf8e3a8b"
+        },
+        {
+          "id": 741,
+          "title": "Independent verification of Google 2022 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-fy2022-environmental-indicators-assurance-letter.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=2dfaba2f6d83020437e03aad23888f2fce9b3d54c2bba1625f03cd0c03aa9f57"
+        },
+        {
+          "id": 742,
+          "title": "2023 CDP Climate Change Questionnaire Response",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-2023-cdp-climate-change-response.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150712Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=331e9e6911664b3e8f392f826dc1ef226cf3aefc70852ad97390245e799541fb"
+        }
+      ]
+    },
+    {
+      "url": "ahalogy.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:10.208280"
+    },
+    {
+      "url": "beetailer.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:11.202952"
+    },
+    {
+      "url": "poweringnews.com",
+      "hosted_by": "Worldstream Internet Solutions",
+      "hosted_by_website": "https://www.worldstream.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 358,
+      "modified": "2024-12-31T15:07:12.774403",
+      "supporting_documents": []
+    },
+    {
+      "url": "bufferapp.com",
+      "hosted_by": "Cloudflare",
+      "hosted_by_website": "https://www.cloudflare.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 779,
+      "modified": "2024-12-31T15:07:03.829081",
+      "supporting_documents": [
+        {
+          "id": 18,
+          "title": "Blog post - The Climate and Cloudflare",
+          "link": "https://blog.cloudflare.com/the-climate-and-cloudflare/"
+        },
+        {
+          "id": 1264,
+          "title": "Cloudflare 2023 Emissions Inventory",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Cloudflare_2023_Emissions_Inventory.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150708Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=89af2dcabe9fb3701cf8fb89442f5b4482c66b21195de662cdb844650f531dfb"
+        }
+      ]
+    },
+    {
+      "url": "bwbx.io",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:03.853054"
+    },
+    {
+      "url": "buzzfed.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:03.973446"
+    },
+    {
+      "url": "buzzfeed.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:04.292389"
+    },
+    {
+      "url": "ccm2.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:04.389936"
+    },
+    {
+      "url": "cint.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:04.509279"
+    },
+    {
+      "url": "breakingburner.com",
+      "hosted_by": "Cloudflare",
+      "hosted_by_website": "https://www.cloudflare.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 779,
+      "modified": "2024-12-31T15:07:04.567323",
+      "supporting_documents": [
+        {
+          "id": 18,
+          "title": "Blog post - The Climate and Cloudflare",
+          "link": "https://blog.cloudflare.com/the-climate-and-cloudflare/"
+        },
+        {
+          "id": 1264,
+          "title": "Cloudflare 2023 Emissions Inventory",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Cloudflare_2023_Emissions_Inventory.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150708Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=89af2dcabe9fb3701cf8fb89442f5b4482c66b21195de662cdb844650f531dfb"
+        }
+      ]
+    },
+    {
+      "url": "delicious.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:04.590979"
+    },
+    {
+      "url": "directededge.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:05.168932"
+    },
+    {
+      "url": "flipboard.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:05.478059"
+    },
+    {
+      "url": "geckotribe.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:06.047865"
+    },
+    {
+      "url": "getsocial.io",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:06.323855"
+    },
+    {
+      "url": "plus.google.com",
+      "hosted_by": "Google Inc.",
+      "hosted_by_website": "https://www.google.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 595,
+      "modified": "2024-12-31T15:07:06.364645",
+      "supporting_documents": [
+        {
+          "id": 108,
+          "title": "Sustainability at Google",
+          "link": "https://sustainability.google"
+        },
+        {
+          "id": 139,
+          "title": "Independent verification of Google 2020 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Google_Cloud_-_3degrees_cloud_services_review_statement_final.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150708Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=f7f87c4329ff3d0745375dec057210e9a7c34d4442d5156fb0696ce915472d6f"
+        },
+        {
+          "id": 140,
+          "title": "2021 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2021-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150708Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=e54a4a99f24907db6b517bb549dab85bf3d860a32b3e2097c80e5543ecbc2fef"
+        },
+        {
+          "id": 141,
+          "title": "2022 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2022-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150708Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=2cc8a175687ed6f9964dad9ae131784b623a1f07c75e8efabf233203d42e8aa2"
+        },
+        {
+          "id": 142,
+          "title": "Independent verification of Google 2021 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-fy2021-environmental-indicators-assurance-letter.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150708Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=d12aee7fe40fbcc61189174c095a3be424bc801e62625633554609db635175d1"
+        },
+        {
+          "id": 740,
+          "title": "2023 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2023-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150708Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9586ae1ac8dcd0a2eafbd86c1eae289cb46e33a2c6246e1a25e3bbb2031a3289"
+        },
+        {
+          "id": 741,
+          "title": "Independent verification of Google 2022 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-fy2022-environmental-indicators-assurance-letter.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150708Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=0c0b6cd802aa645adaee7f1ad2087a3dc556c6e1390aa180d236fa5bc7da7e5e"
+        },
+        {
+          "id": 742,
+          "title": "2023 CDP Climate Change Questionnaire Response",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-2023-cdp-climate-change-response.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150708Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=87ef49fd3a62bfc56a92372e72cde6be3b9cd1508271fcf3ff39e4703e6b32ea"
+        }
+      ]
+    },
+    {
+      "url": "jtdiscuss.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:06.388791"
+    },
+    {
+      "url": "daum.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:06.937488"
+    },
+    {
+      "url": "daumcdn.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:07.013780"
+    },
+    {
+      "url": "lessbuttons.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:07.358524"
+    },
+    {
+      "url": "lfstmedia.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:08.153899"
+    },
+    {
+      "url": "livejournal.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:08.698867"
+    },
+    {
+      "url": "livejournal.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:08.766825"
+    },
+    {
+      "url": "mshcdn.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:07.161581"
+    },
+    {
+      "url": "metabroadcast.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:08.344363"
+    },
+    {
+      "url": "mobilenations.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:09.475003"
+    },
+    {
+      "url": "myspace.com",
+      "hosted_by": "Google Inc.",
+      "hosted_by_website": "https://www.google.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 595,
+      "modified": "2024-12-31T15:07:09.779567",
+      "supporting_documents": [
+        {
+          "id": 108,
+          "title": "Sustainability at Google",
+          "link": "https://sustainability.google"
+        },
+        {
+          "id": 139,
+          "title": "Independent verification of Google 2020 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Google_Cloud_-_3degrees_cloud_services_review_statement_final.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=98050526df5383242836b436d27a4ddf90392b1c05b631913770b0154b99e248"
+        },
+        {
+          "id": 140,
+          "title": "2021 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2021-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=38bde0a10b7628f7ea8a37981ff374663f9b8d74b2a91e7b9825f25be5c9665a"
+        },
+        {
+          "id": 141,
+          "title": "2022 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2022-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=bdf59a54a8838e7b7d1b279a1891b5f6f7e6931b06da2f093a8680442d68685e"
+        },
+        {
+          "id": 142,
+          "title": "Independent verification of Google 2021 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-fy2021-environmental-indicators-assurance-letter.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=d40448573b47760f0c0cec020be515045032731444fceed934448dd047fb8a48"
+        },
+        {
+          "id": 740,
+          "title": "2023 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2023-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=62eb4b6b1ef8c02437dfb7a126ed943d234f9d96e42a4f5590914250f513520a"
+        },
+        {
+          "id": 741,
+          "title": "Independent verification of Google 2022 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-fy2022-environmental-indicators-assurance-letter.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=db8cfc5adfc4b3189d0e7050f89039f92d727c889c4593bc43d3049563ff4697"
+        },
+        {
+          "id": 742,
+          "title": "2023 CDP Climate Change Questionnaire Response",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-2023-cdp-climate-change-response.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=4b9069f2902b26344d2bb89c87aece9d2f1d7e68be5ff46782da4e1a8e0d024d"
+        }
+      ]
+    },
+    {
+      "url": "newsharecounts.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:11.336219"
+    },
+    {
+      "url": "news.com.au",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:14.097445"
+    },
+    {
+      "url": "newsanalytics.com.au",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:15.540633"
+    },
+    {
+      "url": "newsapi.com.au",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:15.734216"
+    },
+    {
+      "url": "newscdn.com.au",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:16.557438"
+    },
+    {
+      "url": "newsdata.com.au",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:26.633966"
+    },
+    {
+      "url": "newsdiscover.com.au",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:28.114656"
+    },
+    {
+      "url": "news-static.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:28.597037"
+    },
+    {
+      "url": "pistonheads.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:29.372519"
+    },
+    {
+      "url": "pixlee.com",
+      "hosted_by": "Amazon Web Services",
+      "hosted_by_website": "https://aws.amazon.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 697,
+      "modified": "2024-12-31T15:07:29.509625",
+      "supporting_documents": [
+        {
+          "id": 87,
+          "title": "Amazon's Cloud Sustainability page",
+          "link": "https://sustainability.aboutamazon.com/environment/the-cloud"
+        },
+        {
+          "id": 88,
+          "title": "Amazon's emissions 2018 methodology paper",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-carbon-methodology-september-2019.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=80479c7ffd97bdce105c51700999d735a6b6f4e6a6a5addecd79aaabd963273e"
+        },
+        {
+          "id": 89,
+          "title": "Amazon 2020 GHG Verification statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2020-ghg-verification-statement.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=5625ae9da1b3f421f2592f144eabe30b316506541e7f853ea44977a80b24da84"
+        },
+        {
+          "id": 90,
+          "title": "Amazon 2020 Renewable Energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2020-renewable-energy-assurance-statement.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c27115a91bc44f1c5e06b560cc2779af7a2f7bceda5cfd562bfd5ac5387c3622"
+        },
+        {
+          "id": 91,
+          "title": "Amazon 2020 reporting standards appendices",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/reporting_standards.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c0e8e3d7c31cf2690f421615c4e5e9ddb571cba966aac1d82d4cdaac3b07d144"
+        },
+        {
+          "id": 346,
+          "title": "Amazon 2021 GHG Verification statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2021-ghg-verification.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=201360a57594dfc1af7fb3a0cb660b7810d3deeb9f1a94abcd585563e0ce50c0"
+        },
+        {
+          "id": 347,
+          "title": "Amazon 2021 Renewable Energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2021-renewable-energy-assurance.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=54adf604bb164de9d502c5effcd59f1609e418bbb8ab24791b060e5815d0ddce"
+        },
+        {
+          "id": 526,
+          "title": "Amazon's 2022 Sustainability Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/2022-sustainability-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=ea2cc0ad132c27b650a485fafd0ada82661d92e7d92a59c35ec4eaf7ca4e468e"
+        },
+        {
+          "id": 527,
+          "title": "Amazon 2022 renewable energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/2022-renewable-energy-assurance.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=3ecd4abad0853768019616a33827db9864c6d95d9a67d15bba769e9afec326d1"
+        }
+      ]
+    },
+    {
+      "url": "qrius.me",
+      "hosted_by": "Cloudflare",
+      "hosted_by_website": "https://www.cloudflare.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 779,
+      "modified": "2024-12-31T15:07:30.080232",
+      "supporting_documents": [
+        {
+          "id": 18,
+          "title": "Blog post - The Climate and Cloudflare",
+          "link": "https://blog.cloudflare.com/the-climate-and-cloudflare/"
+        },
+        {
+          "id": 1264,
+          "title": "Cloudflare 2023 Emissions Inventory",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Cloudflare_2023_Emissions_Inventory.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=ec18752ae0255bc30c138809c5c5c32c424800892df5c22e940641517804deab"
+        }
+      ]
+    },
+    {
+      "url": "rssinclude.com",
+      "hosted_by": "Hetzner Online GmbH",
+      "hosted_by_website": "https://www.hetzner.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 131,
+      "modified": "2024-12-31T15:07:31.113930",
+      "supporting_documents": [
+        {
+          "id": 1094,
+          "title": "Sustainability page",
+          "link": "https://www.hetzner.com/unternehmen/nachhaltigkeit/"
+        },
+        {
+          "id": 1095,
+          "title": "Renewable Energy Certificates - Germany",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/oekostrom-zertifikat-2025_naturenergie.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=3361039462118fd9686dead3c96b5ce02045ee6fe7c443d345ac6af1826349a5"
+        },
+        {
+          "id": 1096,
+          "title": "Renewable Energy Certificates - Finland",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Oomi-sertifikaatti-tuulivesi-Hetzner-2024-eng.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=160cfe917989daa8f5d14f3bdcd7a2f219263640953911a598f99063496a56be"
+        }
+      ]
+    },
+    {
+      "url": "sentifi.com",
+      "hosted_by": "Cloudflare",
+      "hosted_by_website": "https://www.cloudflare.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 779,
+      "modified": "2024-12-31T15:07:31.263889",
+      "supporting_documents": [
+        {
+          "id": 18,
+          "title": "Blog post - The Climate and Cloudflare",
+          "link": "https://blog.cloudflare.com/the-climate-and-cloudflare/"
+        },
+        {
+          "id": 1264,
+          "title": "Cloudflare 2023 Emissions Inventory",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Cloudflare_2023_Emissions_Inventory.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=ec18752ae0255bc30c138809c5c5c32c424800892df5c22e940641517804deab"
+        }
+      ]
+    },
+    {
+      "url": "socialshopwave.com",
+      "hosted_by": "Amazon Web Services",
+      "hosted_by_website": "https://aws.amazon.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 697,
+      "modified": "2024-12-31T15:07:31.607064",
+      "supporting_documents": [
+        {
+          "id": 87,
+          "title": "Amazon's Cloud Sustainability page",
+          "link": "https://sustainability.aboutamazon.com/environment/the-cloud"
+        },
+        {
+          "id": 88,
+          "title": "Amazon's emissions 2018 methodology paper",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-carbon-methodology-september-2019.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=80479c7ffd97bdce105c51700999d735a6b6f4e6a6a5addecd79aaabd963273e"
+        },
+        {
+          "id": 89,
+          "title": "Amazon 2020 GHG Verification statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2020-ghg-verification-statement.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=5625ae9da1b3f421f2592f144eabe30b316506541e7f853ea44977a80b24da84"
+        },
+        {
+          "id": 90,
+          "title": "Amazon 2020 Renewable Energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2020-renewable-energy-assurance-statement.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c27115a91bc44f1c5e06b560cc2779af7a2f7bceda5cfd562bfd5ac5387c3622"
+        },
+        {
+          "id": 91,
+          "title": "Amazon 2020 reporting standards appendices",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/reporting_standards.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c0e8e3d7c31cf2690f421615c4e5e9ddb571cba966aac1d82d4cdaac3b07d144"
+        },
+        {
+          "id": 346,
+          "title": "Amazon 2021 GHG Verification statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2021-ghg-verification.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=201360a57594dfc1af7fb3a0cb660b7810d3deeb9f1a94abcd585563e0ce50c0"
+        },
+        {
+          "id": 347,
+          "title": "Amazon 2021 Renewable Energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2021-renewable-energy-assurance.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=54adf604bb164de9d502c5effcd59f1609e418bbb8ab24791b060e5815d0ddce"
+        },
+        {
+          "id": 526,
+          "title": "Amazon's 2022 Sustainability Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/2022-sustainability-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=ea2cc0ad132c27b650a485fafd0ada82661d92e7d92a59c35ec4eaf7ca4e468e"
+        },
+        {
+          "id": 527,
+          "title": "Amazon 2022 renewable energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/2022-renewable-energy-assurance.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150732Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=3ecd4abad0853768019616a33827db9864c6d95d9a67d15bba769e9afec326d1"
+        }
+      ]
+    },
+    {
+      "url": "slpht.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:31.941371"
+    },
+    {
+      "url": "spot.im",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:32.281532"
+    },
+    {
+      "url": "spotim.market",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:05.774985"
+    },
+    {
+      "url": "sstatic.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:06.336384"
+    },
+    {
+      "url": "stackla.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:06.390109"
+    },
+    {
+      "url": "storify.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:11.430234"
+    },
+    {
+      "url": "clickable.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:11.531611"
+    },
+    {
+      "url": "tagboard.com",
+      "hosted_by": "Xanthos",
+      "hosted_by_website": "https://www.xanthosdigital.com",
+      "partner": "None",
+      "green": true,
+      "hosted_by_id": 1368,
+      "modified": "2024-12-31T15:07:11.541220",
+      "supporting_documents": []
+    },
+    {
+      "url": "thebestday.com",
+      "hosted_by": "Amazon Web Services",
+      "hosted_by_website": "https://aws.amazon.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 697,
+      "modified": "2024-12-31T15:07:11.815084",
+      "supporting_documents": [
+        {
+          "id": 87,
+          "title": "Amazon's Cloud Sustainability page",
+          "link": "https://sustainability.aboutamazon.com/environment/the-cloud"
+        },
+        {
+          "id": 88,
+          "title": "Amazon's emissions 2018 methodology paper",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-carbon-methodology-september-2019.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=557e345620e6910b4ba20b76953f86d5ecd7f6e4ce651e2a174de3537e4917b5"
+        },
+        {
+          "id": 89,
+          "title": "Amazon 2020 GHG Verification statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2020-ghg-verification-statement.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=7630510992a86ada5de891e13721be9df3679ebdef3a03642f4744a72bbecbd6"
+        },
+        {
+          "id": 90,
+          "title": "Amazon 2020 Renewable Energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2020-renewable-energy-assurance-statement.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=6ab9a139acc8fcc09ddb255085fd69d58fc858be8d2b8214528ebcd6c454ed2c"
+        },
+        {
+          "id": 91,
+          "title": "Amazon 2020 reporting standards appendices",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/reporting_standards.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=182f443c3ade7d4abc0612029a9f49712aa497fc39236e0fa55672b6faeea1ba"
+        },
+        {
+          "id": 346,
+          "title": "Amazon 2021 GHG Verification statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2021-ghg-verification.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=0506267e7f72f47eb2d8f0ee8af42c1c65820b798b387ab9d2edb49a703d0ec3"
+        },
+        {
+          "id": 347,
+          "title": "Amazon 2021 Renewable Energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2021-renewable-energy-assurance.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=06871115b18814b0bf89ded586af67ae9bed142461beefebccf7e9d44da6b823"
+        },
+        {
+          "id": 526,
+          "title": "Amazon's 2022 Sustainability Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/2022-sustainability-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9f8e214886dd31f96852dd839983f265c643ffd239c671522220043f6c8deb7b"
+        },
+        {
+          "id": 527,
+          "title": "Amazon 2022 renewable energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/2022-renewable-energy-assurance.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c5b8ccfd67f06bf4fbc29f5016324bd3180ce4845ccaaf16c65f4e3e562228e2"
+        }
+      ]
+    },
+    {
+      "url": "tiktok.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:12.133904"
+    },
+    {
+      "url": "ipstatp.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:12.171009"
+    },
+    {
+      "url": "tm-aws.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:12.276627"
+    },
+    {
+      "url": "icnetwork.co.uk",
+      "hosted_by": "Amazon Web Services",
+      "hosted_by_website": "https://aws.amazon.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 697,
+      "modified": "2024-12-31T15:07:12.583003",
+      "supporting_documents": [
+        {
+          "id": 87,
+          "title": "Amazon's Cloud Sustainability page",
+          "link": "https://sustainability.aboutamazon.com/environment/the-cloud"
+        },
+        {
+          "id": 88,
+          "title": "Amazon's emissions 2018 methodology paper",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-carbon-methodology-september-2019.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=557e345620e6910b4ba20b76953f86d5ecd7f6e4ce651e2a174de3537e4917b5"
+        },
+        {
+          "id": 89,
+          "title": "Amazon 2020 GHG Verification statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2020-ghg-verification-statement.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=7630510992a86ada5de891e13721be9df3679ebdef3a03642f4744a72bbecbd6"
+        },
+        {
+          "id": 90,
+          "title": "Amazon 2020 Renewable Energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2020-renewable-energy-assurance-statement.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=6ab9a139acc8fcc09ddb255085fd69d58fc858be8d2b8214528ebcd6c454ed2c"
+        },
+        {
+          "id": 91,
+          "title": "Amazon 2020 reporting standards appendices",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/reporting_standards.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=182f443c3ade7d4abc0612029a9f49712aa497fc39236e0fa55672b6faeea1ba"
+        },
+        {
+          "id": 346,
+          "title": "Amazon 2021 GHG Verification statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2021-ghg-verification.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=0506267e7f72f47eb2d8f0ee8af42c1c65820b798b387ab9d2edb49a703d0ec3"
+        },
+        {
+          "id": 347,
+          "title": "Amazon 2021 Renewable Energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/amazon-2021-renewable-energy-assurance.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=06871115b18814b0bf89ded586af67ae9bed142461beefebccf7e9d44da6b823"
+        },
+        {
+          "id": 526,
+          "title": "Amazon's 2022 Sustainability Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/2022-sustainability-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9f8e214886dd31f96852dd839983f265c643ffd239c671522220043f6c8deb7b"
+        },
+        {
+          "id": 527,
+          "title": "Amazon 2022 renewable energy assurance statement",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/2022-renewable-energy-assurance.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c5b8ccfd67f06bf4fbc29f5016324bd3180ce4845ccaaf16c65f4e3e562228e2"
+        }
+      ]
+    },
+    {
+      "url": "t.co",
+      "hosted_by": "Cloudflare",
+      "hosted_by_website": "https://www.cloudflare.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 779,
+      "modified": "2024-12-31T15:07:12.661663",
+      "supporting_documents": [
+        {
+          "id": 18,
+          "title": "Blog post - The Climate and Cloudflare",
+          "link": "https://blog.cloudflare.com/the-climate-and-cloudflare/"
+        },
+        {
+          "id": 1264,
+          "title": "Cloudflare 2023 Emissions Inventory",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Cloudflare_2023_Emissions_Inventory.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1544ddffb54225cd1df1a4ca9eec6faf786cb3fdf348444583243b26c4ca2ac0"
+        }
+      ]
+    },
+    {
+      "url": "shopapps.in",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:13.105765"
+    },
+    {
+      "url": "audioboom.com",
+      "hosted_by": "Cloudflare",
+      "hosted_by_website": "https://www.cloudflare.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 779,
+      "modified": "2024-12-31T15:07:13.131580",
+      "supporting_documents": [
+        {
+          "id": 18,
+          "title": "Blog post - The Climate and Cloudflare",
+          "link": "https://blog.cloudflare.com/the-climate-and-cloudflare/"
+        },
+        {
+          "id": 1264,
+          "title": "Cloudflare 2023 Emissions Inventory",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Cloudflare_2023_Emissions_Inventory.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1544ddffb54225cd1df1a4ca9eec6faf786cb3fdf348444583243b26c4ca2ac0"
+        }
+      ]
+    },
+    {
+      "url": "audioboo.fm",
+      "hosted_by": "Cloudflare",
+      "hosted_by_website": "https://www.cloudflare.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 779,
+      "modified": "2024-12-31T15:07:13.239387",
+      "supporting_documents": [
+        {
+          "id": 18,
+          "title": "Blog post - The Climate and Cloudflare",
+          "link": "https://blog.cloudflare.com/the-climate-and-cloudflare/"
+        },
+        {
+          "id": 1264,
+          "title": "Cloudflare 2023 Emissions Inventory",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Cloudflare_2023_Emissions_Inventory.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1544ddffb54225cd1df1a4ca9eec6faf786cb3fdf348444583243b26c4ca2ac0"
+        }
+      ]
+    },
+    {
+      "url": "sharebutton.co",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:13.692747"
+    },
+    {
+      "url": "donreach.com",
+      "hosted_by": "Cloudflare",
+      "hosted_by_website": "https://www.cloudflare.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 779,
+      "modified": "2024-12-31T15:07:13.742615",
+      "supporting_documents": [
+        {
+          "id": 18,
+          "title": "Blog post - The Climate and Cloudflare",
+          "link": "https://blog.cloudflare.com/the-climate-and-cloudflare/"
+        },
+        {
+          "id": 1264,
+          "title": "Cloudflare 2023 Emissions Inventory",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Cloudflare_2023_Emissions_Inventory.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1544ddffb54225cd1df1a4ca9eec6faf786cb3fdf348444583243b26c4ca2ac0"
+        }
+      ]
+    },
+    {
+      "url": "reddit.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:13.776737"
+    },
+    {
+      "url": "redditstatic.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:13.836669"
+    },
+    {
+      "url": "tru.am",
+      "hosted_by": "Cloudflare",
+      "hosted_by_website": "https://www.cloudflare.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 779,
+      "modified": "2024-12-31T15:07:13.884013",
+      "supporting_documents": [
+        {
+          "id": 18,
+          "title": "Blog post - The Climate and Cloudflare",
+          "link": "https://blog.cloudflare.com/the-climate-and-cloudflare/"
+        },
+        {
+          "id": 1264,
+          "title": "Cloudflare 2023 Emissions Inventory",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Cloudflare_2023_Emissions_Inventory.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150713Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1544ddffb54225cd1df1a4ca9eec6faf786cb3fdf348444583243b26c4ca2ac0"
+        }
+      ]
+    }
+  ],
+  "greenDomains": 26,
+  "totalSites": 100
+}

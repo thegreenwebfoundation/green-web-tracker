@@ -1,0 +1,239 @@
+{
+  "timestamp": "2024-12-31T15:07:02.647Z",
+  "sourceFile": "src/_data/indexes/third-party-video.json",
+  "data": [
+    {
+      "url": "youtube.com",
+      "hosted_by": "Google Inc.",
+      "hosted_by_website": "https://www.google.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 595,
+      "modified": "2024-12-31T15:07:01.284781",
+      "supporting_documents": [
+        {
+          "id": 108,
+          "title": "Sustainability at Google",
+          "link": "https://sustainability.google"
+        },
+        {
+          "id": 139,
+          "title": "Independent verification of Google 2020 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Google_Cloud_-_3degrees_cloud_services_review_statement_final.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c5937b1f76243f8d8789bd5d7b0d4edcb510213e597d071989fe45ba2a824383"
+        },
+        {
+          "id": 140,
+          "title": "2021 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2021-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=d70817f241ff975d931a3775b0593016fd4ea4062adafd662e1d559407267cad"
+        },
+        {
+          "id": 141,
+          "title": "2022 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2022-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=713bdeec01de1c89554642ca8766de0c83988c36c1ed8e37d21a8b7d3ccf6afa"
+        },
+        {
+          "id": 142,
+          "title": "Independent verification of Google 2021 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-fy2021-environmental-indicators-assurance-letter.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c5fdb460f0a1c1aa8e0b23680d468c7873d95ddab51b84b19242da947098cbcb"
+        },
+        {
+          "id": 740,
+          "title": "2023 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2023-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=09a18d769a8a6752576c9872cf3f1bbbf4e5c58e487c2bc4398ffe881d4fcfaa"
+        },
+        {
+          "id": 741,
+          "title": "Independent verification of Google 2022 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-fy2022-environmental-indicators-assurance-letter.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=7fa40a02a9fb4a159b62c10021c5599d7e5c25e6f116b8850e715705994f9c8f"
+        },
+        {
+          "id": 742,
+          "title": "2023 CDP Climate Change Questionnaire Response",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-2023-cdp-climate-change-response.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8c8fdf7d72cf5fe35466670d746e7cb8d22e635db615b917ebbb6e50ebe13312"
+        }
+      ]
+    },
+    {
+      "url": "ggpht.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:01.310146"
+    },
+    {
+      "url": "youtube-nocookie.com",
+      "hosted_by": "Google Inc.",
+      "hosted_by_website": "https://www.google.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 595,
+      "modified": "2024-12-31T15:07:01.352477",
+      "supporting_documents": [
+        {
+          "id": 108,
+          "title": "Sustainability at Google",
+          "link": "https://sustainability.google"
+        },
+        {
+          "id": 139,
+          "title": "Independent verification of Google 2020 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Google_Cloud_-_3degrees_cloud_services_review_statement_final.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c5937b1f76243f8d8789bd5d7b0d4edcb510213e597d071989fe45ba2a824383"
+        },
+        {
+          "id": 140,
+          "title": "2021 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2021-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=d70817f241ff975d931a3775b0593016fd4ea4062adafd662e1d559407267cad"
+        },
+        {
+          "id": 141,
+          "title": "2022 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2022-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=713bdeec01de1c89554642ca8766de0c83988c36c1ed8e37d21a8b7d3ccf6afa"
+        },
+        {
+          "id": 142,
+          "title": "Independent verification of Google 2021 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-fy2021-environmental-indicators-assurance-letter.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=c5fdb460f0a1c1aa8e0b23680d468c7873d95ddab51b84b19242da947098cbcb"
+        },
+        {
+          "id": 740,
+          "title": "2023 Environmental Report",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/google-2023-environmental-report.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=09a18d769a8a6752576c9872cf3f1bbbf4e5c58e487c2bc4398ffe881d4fcfaa"
+        },
+        {
+          "id": 741,
+          "title": "Independent verification of Google 2022 Reporting",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-fy2022-environmental-indicators-assurance-letter.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=7fa40a02a9fb4a159b62c10021c5599d7e5c25e6f116b8850e715705994f9c8f"
+        },
+        {
+          "id": 742,
+          "title": "2023 CDP Climate Change Questionnaire Response",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/alphabet-2023-cdp-climate-change-response.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8c8fdf7d72cf5fe35466670d746e7cb8d22e635db615b917ebbb6e50ebe13312"
+        }
+      ]
+    },
+    {
+      "url": "ytimg.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:01.382748"
+    },
+    {
+      "url": "wistia.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:01.459670"
+    },
+    {
+      "url": "embedwistia-a.akamaihd.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:01.528171"
+    },
+    {
+      "url": "wistia.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:01.547173"
+    },
+    {
+      "url": "brightcove.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:01.625613"
+    },
+    {
+      "url": "brightcove.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:01.645532"
+    },
+    {
+      "url": "zencdn.net",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:01.700807"
+    },
+    {
+      "url": "vimeo.com",
+      "hosted_by": "Cloudflare",
+      "hosted_by_website": "https://www.cloudflare.com",
+      "partner": null,
+      "green": true,
+      "hosted_by_id": 779,
+      "modified": "2024-12-31T15:07:01.766189",
+      "supporting_documents": [
+        {
+          "id": 18,
+          "title": "Blog post - The Climate and Cloudflare",
+          "link": "https://blog.cloudflare.com/the-climate-and-cloudflare/"
+        },
+        {
+          "id": 1264,
+          "title": "Cloudflare 2023 Emissions Inventory",
+          "link": "https://s3.nl-ams.scw.cloud/tgwf-web-app-live/uploads/Cloudflare_2023_Emissions_Inventory.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=SCWT1WBAW6NZ5SW5GYJ8%2F20241231%2Fnl-ams%2Fs3%2Faws4_request&X-Amz-Date=20241231T150702Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=115cedc72aea625b85e42bd44944b4835ca78ef42eea356e67e0c30c867bac15"
+        }
+      ]
+    },
+    {
+      "url": "vimeocdn.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:02.106491"
+    },
+    {
+      "url": "twitch.tv",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:02.156362"
+    },
+    {
+      "url": "opentok.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:02.193860"
+    },
+    {
+      "url": "admanmedia.com",
+      "hosted_by": null,
+      "hosted_by_website": null,
+      "partner": null,
+      "green": false,
+      "hosted_by_id": null,
+      "modified": "2024-12-31T15:07:02.460846"
+    }
+  ],
+  "greenDomains": 3,
+  "totalSites": 15
+}
