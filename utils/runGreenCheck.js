@@ -1,5 +1,4 @@
 import { hosting } from '@tgwf/co2'
-import fg from 'fast-glob'
 import pThrottle from 'p-throttle'
 import { writeFile, mkdir } from 'fs/promises'
 import path from 'path'
@@ -53,7 +52,7 @@ const runGreenCheck = async () => {
         const checkSite = pThrottle({ limit: 1, interval: 1000});
 
         const throttled = checkSite(async (sites) => {
-            const results = await hosting(sites);
+            const results = await hosting(sites, { verbose: true});
             // console.log('Throttled results:', results);
             return results;
         });
@@ -69,6 +68,13 @@ const runGreenCheck = async () => {
         const greenResults = results
             .filter(result => result.status === 'fulfilled')
             .map(result => result.value)
+            .flat()
+            .map(batch => {
+                // Convert object of objects into array of objects
+                return Object.entries(batch).map(([url, data]) => ({
+                    ...data
+                }));
+            })
             .flat();
         
         // Ensure the greenChecks directory exists
@@ -78,7 +84,9 @@ const runGreenCheck = async () => {
         const outputData = {
             timestamp,
             sourceFile: filepath,
-            greenDomains: greenResults
+            data: greenResults,
+            greenDomains: greenResults.filter(result => result.green).length,
+            totalSites: greenResults.length,
         };
 
         const fileName = `green_${filename}_${timestamp.replace(/[:.]/g, '-')}.json`;

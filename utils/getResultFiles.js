@@ -11,6 +11,8 @@ export const getResultFiles = async (filename = null, dataDir = "_data") => {
                         for: data.default.sourceFile,
                         timestamp: data.default.timestamp,
                         greenDomains: data.default.greenDomains,
+                        data: data.default.data,
+                        totalSites: data.default.totalSites, 
                     };
                 });
     

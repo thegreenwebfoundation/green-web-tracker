@@ -1,3 +1,5 @@
+import fg from 'fast-glob';
+
 export const getIndexFiles = async () => {
     try {
         const filesToCheck = await fg('src/_data/indexes/*.json');
