@@ -15,6 +15,31 @@ main {
   max-width: var(--size-xl);
 }
 
+header,
+footer {
+  position: relative;
+}
+
+header::before,
+footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--sand-0);
+  z-index: 1;
+  border-block: 1px solid var(--stone-12);
+  left: 0;
+}
+
+header::before {
+  top: 100%;
+}
+
+footer::before {
+  top: 0;
+}
+
 header {
   max-width: var(--size-xl);
   margin: 0 auto;
@@ -107,6 +132,20 @@ header nav ul {
   display: block;
   max-height: 100%;
   padding-inline: 2rem;
+  border: 1px solid var(--stone-12);
+  position: relative;
+}
+
+#intro aside::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  background: var(--stone-1);
+  z-index: -1;
+  border: 1px solid var(--stone-12);
+  left: -4px;
+  top: -4px;
 }
 
 .index-list {
