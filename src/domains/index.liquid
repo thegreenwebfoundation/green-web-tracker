@@ -9,6 +9,17 @@ permalink: "/domain/{{ domain | slug }}/index.html"
 <h1>Domain: {{ domain }}</h1>
 
 <p>Appears in {{ domain | findDomainInIndexes }} {{ domain | findDomainInIndexes | plural: "indexes", "index"  }}.</p>
+  {% assign domainIndexes = domain | listDomainIndexes %}
+
+<details>
+  <summary>Indexes</summary>
+  <ul>
+    {% for index in domainIndexes %}
+      {% comment %} <li>{{ indexes[index.filename] }}</li> {% endcomment %}
+      <li><a href="/index/{{ indexes[index.filename] | slug }}">{{ indexes[index.filename].name }}</a></li>
+    {% endfor %}
+  </ul>
+</details>
 
 {% assign results = domain | getDomainResults %}
 

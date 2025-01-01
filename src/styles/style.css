@@ -265,8 +265,18 @@ a:focus {
   padding-block-start: 0.75rem;
 }
 
+details > summary {
+  cursor: pointer;
+  /* list-style: none; */
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  color: var(--stone-11);
+}
+
 .table-wrapper {
   overflow-x: auto;
+  margin-block: 2rem;
 }
 
 table {

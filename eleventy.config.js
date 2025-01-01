@@ -139,7 +139,7 @@ export default function(eleventyConfig) {
         let indexCount = 0;
 
         indexes.forEach(index => {
-            index.forEach(site => {
+        index.forEach(site => {
                 let siteDomain = site;
                 try {
                     siteDomain = new URL(site).hostname;
@@ -155,7 +155,17 @@ export default function(eleventyConfig) {
 
 
         return indexCount;
-        // return uniqueSites.includes(domain);
+    });
+
+    eleventyConfig.addAsyncFilter("listDomainIndexes", async (domain) => {
+        const indexResults = await Promise.allSettled(indexFiles);
+
+        const results = indexResults.map(({ value }) => value);
+        const indexes = results.map(result => result);
+
+        const data = indexes.filter(index => index.sites.includes(domain));
+
+        return data;
     });
 
     eleventyConfig.addAsyncFilter("getDomainResults", async (domain) => {
