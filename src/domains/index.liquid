@@ -8,7 +8,7 @@ permalink: "/domain/{{ domain | slug }}/index.html"
 ---
 <h1>Domain: {{ domain }}</h1>
 
-Appears in {{ domain | findDomainInIndexes }} {{ domain | findDomainInIndexes | plural: "indexes", "index"  }}.
+<p>Appears in {{ domain | findDomainInIndexes }} {{ domain | findDomainInIndexes | plural: "indexes", "index"  }}.</p>
 
 {% assign results = domain | getDomainResults %}
 

@@ -16,12 +16,14 @@ permalink: "/index/{{ index | slug }}/index.html"
     {% unless forloop.last %},
     {% endunless %}
   {% endfor %}
-  | Source:
-  {% for source in content.sources %}
-    <a href="{{ source.url }}">{{ source.name }}</a>
-    {% unless forloop.last %},
-    {% endunless %}
-  {% endfor %}
+  {% if content.sources.size > 0 %}
+    | Source:
+    {% for source in content.sources %}
+      <a href="{{ source.url }}">{{ source.name }}</a>
+      {% unless forloop.last %},
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
 </small>
 
 <h2>Domains</h2>
