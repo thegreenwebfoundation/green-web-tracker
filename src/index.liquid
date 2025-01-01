@@ -16,7 +16,7 @@ layout: "layouts/base.liquid"
   {% assign greenPercentage = totalGreenCount | divided_by: uniqueDomains | times: 100 %}
   <aside style="--green-percentage: {{ greenPercentage }}%; --grey-percentage: {{ 100 | minus: greenPercentage }}%;">
     <p>Checking {{ uniqueDomains }} unique domains, across {% getIndexCount %} indexes.</p>
-    <p>Currently {{ totalGreenCount }} domains ({{ greenPercentage }}%) found with green hosting.
+    <p>Currently {{ totalGreenCount }} domains ({{ greenPercentage | floor }}%) found with green hosting.
     </p>
     <small>Last updated:
       <time datetime="{{lastUpdated}}">{{ lastUpdated | date_to_long_string }}</time>
@@ -41,7 +41,7 @@ layout: "layouts/base.liquid"
         <p>{{ index[1].description }}</p>
         <div class="stats">
           <small>Total domain: {{ totalSize }}</small>
-          <small>Green hosted: {{ greenSize }} ({{ greenPercentage }}%)</small>
+          <small>Green hosted: {{ greenSize }} ({{ greenPercentage | floor }}%)</small>
         </div>
       </li>
     {% endfor %}
