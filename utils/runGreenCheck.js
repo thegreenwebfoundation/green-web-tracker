@@ -78,7 +78,11 @@ const runGreenCheck = async () => {
             .map(batch => {
                 // Convert object of objects into array of objects
                 return Object.entries(batch).map(([url, data]) => ({
-                    ...data
+                    url: data.url,
+                    hosted_by: data.hosted_by,
+                    green: data.green,
+                    hosted_by_id: data.hosted_by_id,
+                    modified: data.modified,
                 }));
             })
             .flat();
@@ -98,7 +102,7 @@ const runGreenCheck = async () => {
         const fileName = `green_${filename}_${timestamp.replace(/[:.]/g, '-')}.json`;
         const outputPath = path.join(checksDir, fileName);
         
-        await writeFile(outputPath, JSON.stringify(outputData, null, 2));
+        await writeFile(outputPath, JSON.stringify(outputData));
         return greenResults;
         });
     } catch (error) {
