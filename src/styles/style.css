@@ -75,7 +75,7 @@ footer::before {
 }
 
 header {
-  width: 100%;
+  max-width: 100vw;
   padding: 1rem;
   background: var(--stone-1);
   margin-block-end: 2rem;
@@ -83,7 +83,7 @@ header {
 
 footer {
   margin-block-start: 2rem;
-  width: 100%;
+  max-width: 100vw;
   display: flex;
   padding: 1rem;
   background: var(--stone-1);
