@@ -10,7 +10,7 @@ const resultsFiles = await getResultFiles(null, dataDir);
 export default function(eleventyConfig) {
     eleventyConfig.setInputDirectory('src')
     eleventyConfig.addPassthroughCopy({"public": "/"});
-    // eleventyConfig.addWatchTarget("./src/styles/");
+    eleventyConfig.addWatchTarget("./src/styles/");
 
     eleventyConfig.addAsyncFilter("greenHostsCount", async (index, filename) => {
         const indexResults = await getResultFiles(filename, dataDir);

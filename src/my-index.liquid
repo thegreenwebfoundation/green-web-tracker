@@ -12,9 +12,8 @@ layout: "layouts/base.liquid"
 
 <section id="domain">
   <h2>Private Index</h2>
-  <p>Use the form below to create your own index of up-to ten (10) websites that you'd like to track over time. You can add or remove websites from your index at any time.</p>
+  <p>Use the form below to create your own index of up-to ten (10) websites that you'd like to track. You can add or remove websites from your index at any time.</p>
   <p>Results are stored locally in your browser.</p>
-
   <form id="index-form">
     <label for="index-sites-1">Domain 1
       <input
@@ -83,78 +82,24 @@ layout: "layouts/base.liquid"
 
 <section id="results">
   <h2>Results</h2>
-  <p>Results will appear here once you've created your index.</p>
-
-  <h3>Last check</h3>
   <small>Last update:
     <time id="last-update" datetime=""></time>
   </small>
-  <ul id="last-results-list">
-    <li>Domain 1:
-      <span id="domain-1"></span>
-    </li>
-    <li>Domain 2:
-      <span id="domain-2"></span>
-    </li>
-    <li>Domain 3:
-      <span id="domain-3"></span>
-    </li>
-    <li>Domain 4:
-      <span id="domain-4"></span>
-    </li>
-    <li>Domain 5:
-      <span id="domain-5"></span>
-    </li>
-    <li>Domain 6:
-      <span id="domain-6"></span>
-    </li>
-    <li>Domain 7:
-      <span id="domain-7"></span>
-    </li>
-    <li>Domain 8:
-      <span id="domain-8"></span>
-    </li>
-    <li>Domain 9:
-      <span id="domain-9"></span>
-    </li>
-    <li>Domain 10:
-      <span id="domain-10"></span>
-    </li>
-  </ul>
 
-  <h3>This check</h3>
-  <ul id="this-results-list">
-    <li>Domain 1:
-      <span id="this-domain-1"></span>
-    </li>
-    <li>Domain 2:
-      <span id="this-domain-2"></span>
-    </li>
-    <li>Domain 3:
-      <span id="this-domain-3"></span>
-    </li>
-    <li>Domain 4:
-      <span id="this-domain-4"></span>
-    </li>
-    <li>Domain 5:
-      <span id="this-domain-5"></span>
-    </li>
-    <li>Domain 6:
-      <span id="this-domain-6"></span>
-    </li>
-    <li>Domain 7:
-      <span id="this-domain-7"></span>
-    </li>
-    <li>Domain 8:
-      <span id="this-domain-8"></span>
-    </li>
-    <li>Domain 9:
-      <span id="this-domain-9"></span>
-    </li>
-    <li>Domain 10:
-      <span id="this-domain-10"></span>
-    </li>
-  </ul>
+  <div class="table-wrapper">
+    <table id="results-table">
+      <thead>
+        <tr>
+          <th>Domain</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>There are no results to display.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 
 <script type="module">
@@ -166,7 +111,6 @@ layout: "layouts/base.liquid"
         saveToLocalStorage(results, previousData, timestamp)
         lastUpdate.textContent = new Date(timestamp).toLocaleString()
         lastUpdate.setAttribute('datetime', timestamp)
-        console.log(results)
         return results
       }
 
@@ -179,7 +123,7 @@ layout: "layouts/base.liquid"
       }
     ]
     if (previousData) {
-      data.push(previousData.data[0])
+      data.push(...previousData.data)
     }
     localStorage.setItem('gwf-my-index', JSON.stringify({lastUpdated ,data}))
   }
@@ -210,34 +154,71 @@ layout: "layouts/base.liquid"
     lastUpdate.textContent = new Date(existingData.lastUpdated).toLocaleString()
     lastUpdate.setAttribute('datetime', existingData.lastUpdated)
 
-    const resultsList = document.getElementById('last-results-list')
-    Object.values(existingData.data[0].result).forEach((result, index) => {
-      const domain = document.getElementById(`domain-${index + 1}`)
-      if (domain) {
-        domain.textContent = result.green ? 'Green' : 'Not Green'
-      }
+    const resultsTable = document.getElementById('results-table')
+    // Add cells to the table header for each check that's been run
+    const headerRow = resultsTable.querySelector('thead tr')
+    Object.values(existingData.data).forEach((result, index) => {
+      const cell = document.createElement('th')
+      cell.textContent = new Date(result.timestamp).toLocaleDateString(undefined, {
+      year: '2-digit',
+      month: 'short',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric'
+      })
+      headerRow.appendChild(cell)
     })
 
-    const thisCheck = greenCheck(domains, timestamp).then(results => {
-      const resultsList = document.getElementById('this-results-list')
-      Object.values(results).forEach((result, index) => {
-        console.log(result)
-        const domain = document.getElementById(`this-domain-${index + 1}`)
-        if (domain) {
-          domain.textContent = result.green ? 'Green' : 'Not Green'
+    // Add rows to the table for each domain
+    const tbody = resultsTable.querySelector('tbody')
+    // First clear any existing rows
+    tbody.innerHTML = ''
+
+    // Get a list of all the unique domains from each check
+    const resultDomains = Object.values(existingData.data).reduce((acc, result) => {
+      return acc.concat(Object.keys(result.result))
+    }, []).filter((value, index, self) => self.indexOf(value) === index)
+
+    // For each domain, add a row to the table
+    resultDomains.forEach((domain, index) => {
+      const row = document.createElement('tr')
+      const cell = document.createElement('td')
+      cell.classList.add('domain')
+      cell.textContent = domain
+      row.appendChild(cell)
+      tbody.appendChild(row)
+      // Then loop through each check and add a cell to the row for each check
+      Object.values(existingData.data).forEach((result, index) => {
+        const cell = document.createElement('td')
+        const domainResult = result.result[domain]
+        if (domainResult) {
+          cell.textContent = domainResult.green ? '◯' : '〰'
+        } else {
+          cell.textContent = '⬚'
         }
+        cell.setAttribute('data-green', domainResult ? domainResult.green : 'unknown')
+        row.appendChild(cell)
       })
     })
   }
 
   const form = document.getElementById('index-form')
-  form.addEventListener('submit', (event) => {
+  form.addEventListener('submit', async (event) => {
     event.preventDefault()
     const timestamp = new Date().toISOString()
+    // Check that the last update is at least 24 hours ago
+    const lastUpdated = new Date(lastUpdate.getAttribute('datetime'))
+    if (lastUpdated && (new Date() - lastUpdated) < 86400000) {
+      alert('You can only update your index once every 24 hours.')
+      return
+    }
     const formData = new FormData(form)
     const sites = Array.from(formData.getAll('sites[]'))
       .filter(site => site.trim() !== '') // Remove empty entries
 
-      greenCheck(sites, timestamp)
+      await greenCheck(sites, timestamp)
+
+      // reload the page to show the new results
+      location.reload()
   })
 </script>
