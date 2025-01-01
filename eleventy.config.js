@@ -67,6 +67,36 @@ export default function(eleventyConfig) {
         return uniqueSites.length;
     });
 
+    eleventyConfig.addAsyncShortcode("getGreenCount", async () => {
+        const greenCheckResults = await Promise.allSettled(resultsFiles);
+
+        const results = greenCheckResults.map(({ value }) => value);
+        const data = results.flatMap(result => result.data).filter(data => data.green).map(data => data.url).map(site => {
+            try {
+                return new URL(site).hostname
+            }
+            catch (error) {
+                return site;
+            }
+        });
+
+            const uniqueGreenSites = [...new Set(data)];
+
+            return uniqueGreenSites.length;
+        });
+
+    eleventyConfig.addAsyncShortcode("getLastChecked", async () => {
+        const greenCheckResults = await Promise.allSettled(resultsFiles);
+
+        const results = greenCheckResults.map(({ value }) => value);
+        const lastChecked = results.sort((a, b) => {
+            return new Date(b.timestamp) - new Date(a.timestamp);
+        }).shift();
+
+        return lastChecked.timestamp;
+    });
+
+
     eleventyConfig.addAsyncShortcode("getIndexCount", async () => {
         const indexResults = await Promise.allSettled(indexFiles);
         return indexResults.length;

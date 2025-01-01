@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "watch:11ty": "eleventy --serve",
+    "watch:11ty": "eleventy --serve --quiet",
     "build:eleventy": "eleventy",
     "watch:postcss": "postcss src/styles/*.css --dir _site/css --watch",
     "build:postcss": "postcss src/styles/*.css --dir _site/css",
