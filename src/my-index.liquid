@@ -1,0 +1,243 @@
+---
+layout: "layouts/base.liquid"
+---
+<section id="intro">
+  <div class="text">
+    <h1>Green Web Tracker - My Index</h1>
+    <p>Use this page to create your own, private index of up-to ten (10) websites that you'd like to track over time. Read about
+      <a href="#explainer">how this works</a>
+      below.</p>
+  </div>
+</section>
+
+<section id="domain">
+  <h2>Private Index</h2>
+  <p>Use the form below to create your own index of up-to ten (10) websites that you'd like to track over time. You can add or remove websites from your index at any time.</p>
+  <p>Results are stored locally in your browser.</p>
+
+  <form id="index-form">
+    <label for="index-sites-1">Domain 1
+      <input
+        type="text"
+        id="index-sites-1"
+        name="sites[]"
+        required>
+    </label>
+    <label for="index-sites-2">Domain 2
+      <input
+        type="text"
+        id="index-sites-2"
+        name="sites[]">
+    </label>
+    <label for="index-sites-3">Domain 3
+      <input
+        type="text"
+        id="index-sites-3"
+        name="sites[]">
+    </label>
+    <label for="index-sites-4">Domain 4
+      <input
+        type="text"
+        id="index-sites-4"
+        name="sites[]">
+    </label>
+    <label for="index-sites-5">Domain 5
+      <input
+        type="text"
+        id="index-sites-5"
+        name="sites[]">
+    </label>
+    <label for="index-sites-6">Domain 6
+      <input
+        type="text"
+        id="index-sites-6"
+        name="sites[]">
+    </label>
+    <label for="index-sites-7">Domain 7
+      <input
+        type="text"
+        id="index-sites-7"
+        name="sites[]">
+    </label>
+    <label for="index-sites-8">Domain 8
+      <input
+        type="text"
+        id="index-sites-8"
+        name="sites[]">
+    </label>
+    <label for="index-sites-9">Domain 9
+      <input
+        type="text"
+        id="index-sites-9"
+        name="sites[]">
+    </label>
+    <label for="index-sites-10">Domain 10
+      <input
+        type="text"
+        id="index-sites-10"
+        name="sites[]">
+    </label>
+    <button type="submit">Create Index</button>
+  </form>
+</section>
+
+<section id="results">
+  <h2>Results</h2>
+  <p>Results will appear here once you've created your index.</p>
+
+  <h3>Last check</h3>
+  <small>Last update:
+    <time id="last-update" datetime=""></time>
+  </small>
+  <ul id="last-results-list">
+    <li>Domain 1:
+      <span id="domain-1"></span>
+    </li>
+    <li>Domain 2:
+      <span id="domain-2"></span>
+    </li>
+    <li>Domain 3:
+      <span id="domain-3"></span>
+    </li>
+    <li>Domain 4:
+      <span id="domain-4"></span>
+    </li>
+    <li>Domain 5:
+      <span id="domain-5"></span>
+    </li>
+    <li>Domain 6:
+      <span id="domain-6"></span>
+    </li>
+    <li>Domain 7:
+      <span id="domain-7"></span>
+    </li>
+    <li>Domain 8:
+      <span id="domain-8"></span>
+    </li>
+    <li>Domain 9:
+      <span id="domain-9"></span>
+    </li>
+    <li>Domain 10:
+      <span id="domain-10"></span>
+    </li>
+  </ul>
+
+  <h3>This check</h3>
+  <ul id="this-results-list">
+    <li>Domain 1:
+      <span id="this-domain-1"></span>
+    </li>
+    <li>Domain 2:
+      <span id="this-domain-2"></span>
+    </li>
+    <li>Domain 3:
+      <span id="this-domain-3"></span>
+    </li>
+    <li>Domain 4:
+      <span id="this-domain-4"></span>
+    </li>
+    <li>Domain 5:
+      <span id="this-domain-5"></span>
+    </li>
+    <li>Domain 6:
+      <span id="this-domain-6"></span>
+    </li>
+    <li>Domain 7:
+      <span id="this-domain-7"></span>
+    </li>
+    <li>Domain 8:
+      <span id="this-domain-8"></span>
+    </li>
+    <li>Domain 9:
+      <span id="this-domain-9"></span>
+    </li>
+    <li>Domain 10:
+      <span id="this-domain-10"></span>
+    </li>
+  </ul>
+</section>
+
+<script type="module">
+  import { hosting } from 'https://esm.sh/@tgwf/co2'
+
+  const greenCheck = async (sites, timestamp) => {
+        const results = await hosting(sites, { verbose: true })
+        const previousData = loadFromLocalStorage()
+        saveToLocalStorage(results, previousData, timestamp)
+        lastUpdate.textContent = new Date(timestamp).toLocaleString()
+        lastUpdate.setAttribute('datetime', timestamp)
+        console.log(results)
+        return results
+      }
+
+  const saveToLocalStorage = (result, previousData, timestamp) => {
+    const lastUpdated = timestamp;
+    const data = [      
+      {
+        timestamp,
+        result
+      }
+    ]
+    if (previousData) {
+      data.push(previousData.data[0])
+    }
+    localStorage.setItem('gwf-my-index', JSON.stringify({lastUpdated ,data}))
+  }
+
+  const loadFromLocalStorage = () => {
+    const data = localStorage.getItem('gwf-my-index')
+    if (!data) return
+    return JSON.parse(data)
+  }
+
+  const existingData = loadFromLocalStorage()
+  const lastUpdate = document.getElementById('last-update')
+  // If there's existing data, populate the form with it
+  if (existingData) {
+    const timestamp = new Date().toISOString()
+    const form = document.getElementById('index-form')
+    const domains = Object.values(existingData.data[0].result).map(result => result.url)
+
+    for(let i = 0; i < 10; i++) {
+      const input = form.querySelector(`#index-sites-${i + 1}`)
+      if (input && domains[i]) {
+        input.value = domains[i]
+      } else {
+        break
+      }
+    }
+
+    lastUpdate.textContent = new Date(existingData.lastUpdated).toLocaleString()
+    lastUpdate.setAttribute('datetime', existingData.lastUpdated)
+
+    const resultsList = document.getElementById('last-results-list')
+    Object.values(existingData.data[0].result).forEach((result, index) => {
+      const domain = document.getElementById(`domain-${index + 1}`)
+      if (domain) {
+        domain.textContent = result.green ? 'Green' : 'Not Green'
+      }
+    })
+
+    const thisCheck = greenCheck(domains, timestamp).then(results => {
+      const resultsList = document.getElementById('this-results-list')
+      Object.values(results).forEach((result, index) => {
+        console.log(result)
+        const domain = document.getElementById(`this-domain-${index + 1}`)
+        if (domain) {
+          domain.textContent = result.green ? 'Green' : 'Not Green'
+        }
+      })
+    })
+  }
+
+  const form = document.getElementById('index-form')
+  form.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const timestamp = new Date().toISOString()
+    const formData = new FormData(form)
+    const sites = Array.from(formData.getAll('sites[]'))
+      .filter(site => site.trim() !== '') // Remove empty entries
+
+      greenCheck(sites, timestamp)
+  })
+</script>

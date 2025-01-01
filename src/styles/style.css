@@ -310,3 +310,18 @@ table td[data-green="false"] {
   background: var(--gray-3);
   opacity: 0.75;
 }
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-block: 2rem;
+  flex-direction: column;
+}
+
+label:has(input[type="text"]) {
+  display: grid;
+  grid-template-columns: 10ch 1fr;
+  align-items: center;
+  gap: 1rem;
+}
