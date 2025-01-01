@@ -1,11 +1,17 @@
 import fg from 'fast-glob'
+const dev = process.env.ELEVENTY_RUN_MODE === 'serve';
 
 export const getResultFiles = async (filename = null, dataDir = "_data") => {
     try {
-        const greenCheckResultFiles = filename ? await fg(`src/${dataDir}/checks/green_${filename}_*.json`) : await fg(`src/${dataDir}/checks/*.json`);
+        let greenCheckResultFiles = filename ? await fg(`src/${dataDir}/checks/green_${filename}_*.json`) : await fg(`src/${dataDir}/checks/*.json`);
     
             const greenCheckResults = greenCheckResultFiles.map(async (file) => {
                 const data = await import(`../${file}`, { with: { type: 'json' } }).then((data) => {
+
+                    if (dev) {
+                        data.default.data = data.default.data.slice(0, 10);
+                    }
+                    
                     return {
                         filepath: file,
                         for: data.default.sourceFile,
