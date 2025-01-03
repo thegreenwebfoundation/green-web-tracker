@@ -31,6 +31,8 @@ permalink: "/index/{{ index | slug }}/index.html"
 
 <p>This index has been checked {{ results | size }} times.</p>
 
+{% include 'partials/legend.liquid' %}
+
 <div class="table-wrapper">
   <table class="index-results">
     <thead>

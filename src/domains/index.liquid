@@ -23,6 +23,8 @@ permalink: "/domain/{{ domain | slug }}/index.html"
 
 {% assign results = domain | getDomainResults %}
 
+{% include 'partials/legend.liquid' %}
+
 <div class="table-wrapper">
   <table class="domain-results">
     <thead>
