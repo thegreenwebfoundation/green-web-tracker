@@ -199,6 +199,9 @@ layout: "layouts/base.liquid"
         row.appendChild(cell)
       })
     })
+
+    const btnSubmit = form.querySelector('button[type="submit"]')
+    btnSubmit.textContent = 'Recheck Index'
   }
 
   const form = document.getElementById('index-form')

@@ -312,16 +312,61 @@ table td[data-green="false"] {
 }
 
 form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-block: 2rem;
-  flex-direction: column;
+  display: grid;
+  column-gap: 3rem;
+  row-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(50ch, 1fr));
+  align-items: center;
+  margin-block-start: 2rem;
 }
 
 label:has(input[type="text"]) {
   display: grid;
   grid-template-columns: 10ch 1fr;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
+  width: 100%;
+  text-align: right;
+  padding: 0.5rem;
+  transition: background 0.3s, outline 0.3s;
+}
+
+label:has(input[type="text"]) input {
+  padding: 0.5rem;
+  border: 1px solid var(--stone-12);
+  font-size: var(--font-size-2);
+  font-family: var(--font-monospace-code);
+}
+
+label:focus-within {
+  outline: 2px solid var(--purple-5);
+  background: var(--purple-0);
+}
+
+label:has(input[type="text"]) input:focus {
+  outline: 1px solid var(--purple-5);
+  border: 1px solid var(--purple-5);
+}
+
+button[type="submit"] {
+  margin-block-start: 2rem;
+  grid-column: 1 / -1;
+  padding: 1rem 1.5rem;
+  margin-inline: auto;
+  width: 50ch;
+  border-radius: 0.25rem;
+  border: 1px solid var(--purple-5);
+  background: var(--purple-8);
+  color: var(--stone-0);
+  font-weight: bold;
+  box-shadow: var(--shadow-3);
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background: var(--purple-5);
+  /* color: var(--stone-11); */
+  box-shadow: var(--shadow-1);
 }
