@@ -37,9 +37,14 @@ permalink: "/index/{{ index | slug }}/index.html"
   <table class="index-results">
     <thead>
       <tr>
-        <th>Domain</th>
+        <th></th>
         <th colspan="{{ results | size }}">Results</th>
       </tr>
+      <tr>
+        <th>Domain</th>
+        {% for result in results %}
+          <th>{{ result.timestamp | date: "%e %b '%y" }}</th>
+        {% endfor %}
     </thead>
     <tbody>
       {% for domain in content.sites %}
