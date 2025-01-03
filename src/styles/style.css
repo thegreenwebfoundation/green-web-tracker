@@ -1,6 +1,6 @@
 body {
   font-family: var(--font-humanist);
-  background-color: var(--sand-0);
+  background-color: var(--stone-0);
   max-width: 100vw;
   font-size: var(--font-size-2);
   margin: 0;
@@ -41,12 +41,29 @@ h6 {
   font-size: var(--font-size-1);
 }
 
+h1:has(+ small),
+h2:has(+ small),
+h3:has(+ small) {
+  margin-block-end: 0.75rem;
+}
+
 main {
   min-height: 95vh;
   position: relative;
   margin: 0 auto;
   padding-inline: 1.125rem;
   max-width: var(--size-xl);
+}
+
+li {
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--stone-12);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: var(--stone-0);
+  color: var(--stone-11);
 }
 
 header,
@@ -60,9 +77,9 @@ footer::before {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: var(--sand-0);
+  background-color: hsl(var(--blue-1-hsl) / 20%);
   z-index: 1;
-  border-block: 1px solid var(--stone-12);
+  border-block: 1px solid var(--blue-12);
   left: 0;
 }
 
@@ -77,7 +94,8 @@ footer::before {
 header {
   max-width: 100vw;
   padding: 1rem;
-  background: var(--stone-1);
+  /* background: var(--purple-0); */
+  background-color: hsl(var(--blue-2-hsl) / 20%);
   margin-block-end: 2rem;
 }
 
@@ -86,7 +104,7 @@ footer {
   max-width: 100vw;
   display: flex;
   padding: 1rem;
-  background: var(--stone-1);
+  background-color: hsl(var(--blue-2-hsl) / 20%);
 }
 
 header .wrapper,
@@ -129,6 +147,34 @@ header nav ul {
   list-style: none;
 }
 
+header nav ul li.public {
+  background: var(--blue-8);
+  color: var(--stone-0);
+  border: none;
+}
+
+header nav ul li.public:hover {
+  background: var(--blue-2);
+  color: var(--stone-11);
+  box-shadow: var(--shadow-1);
+}
+
+header nav ul li.private {
+  background: var(--purple-8);
+  color: var(--stone-0);
+  border: none;
+}
+
+header nav ul li.private:hover {
+  background: var(--purple-2);
+  color: var(--stone-11);
+  box-shadow: var(--shadow-1);
+}
+
+header nav ul li {
+  box-shadow: var(--shadow-3);
+}
+
 .skip-link {
   position: absolute;
   top: auto;
@@ -169,16 +215,21 @@ header nav ul {
 
 #intro aside {
   flex: 0 1 25rem;
-  background: var(--stone-2);
+  background: hsl(var(--purple-7-hsl) / 20%);
+  background: var(--purple-7);
+  color: var(--stone-0);
+  border-radius: 0.25rem;
   height: 100%;
   width: 100%;
   display: block;
   max-height: 100%;
   padding-inline: 2rem;
-  border-block-start: 1px solid var(--stone-12);
-  border-inline: 1px solid var(--stone-12);
+  /* border-block-start: 1px solid var(--purple-5); */
+  /* border-inline: 1px solid var(--purple-5); */
   position: relative;
-  padding-block-end: 1rem;
+  padding-block-end: 2rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-3);
 }
 
 .index-list {
@@ -197,47 +248,56 @@ header nav ul {
 .index-list li {
   margin-block-end: 1rem;
   padding: 0.75rem;
-  background: var(--stone-1);
-  border-block-start: 1px solid var(--stone-12);
-  border-inline: 1px solid var(--stone-12);
+  background: var(--blue-7);
+  /* border-block-start: 1px solid var(--stone-12);
+  border-inline: 1px solid var(--stone-12); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   position: relative;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  padding-block-end: 1.5rem;
+  box-shadow: var(--shadow-3);
+  color: var(--stone-0);
+}
+
+.index-list li:hover {
+  box-shadow: var(--shadow-1);
+  background: var(--blue-1);
+  color: var(--stone-11);
 }
 
 #intro aside::before,
 .index-list li::before {
   content: "";
   position: absolute;
-  width: calc(var(--green-percentage) - 0.25%);
-  height: 6px;
-  background: var(--green-7);
-  z-index: -1;
-  left: -1px;
-  top: 100%;
+  width: calc(var(--green-percentage) + 5px);
+  height: 14px;
+  background: var(--lime-5);
+  z-index: 2;
+  left: -5px;
+  top: calc(100% - 14px);
+  transform: skewX(-45deg);
 }
 
 #intro aside::after,
 .index-list li::after {
   content: "";
   position: absolute;
-  width: calc(var(--grey-percentage) - 0.25% + 1px);
-  height: 6px;
-  background: var(--gray-7);
+  width: calc(100% + 2px);
+  height: 14px;
+  background: var(--sand-4);
   z-index: 1;
-  left: calc(var(--green-percentage) + 0.25%);
-  top: 100%;
-}
-
-.index-list li:hover {
-  background: var(--stone-2);
+  left: 0;
+  top: calc(100% - 14px);
 }
 
 a,
 a:visited {
   font-weight: bold;
-  color: var(--stone-11);
+  color: currentColor;
 }
 
 a:hover,
@@ -263,6 +323,7 @@ a:focus {
   margin-block-start: 0.75rem;
   border-block-start: 1px solid var(--stone-12);
   padding-block-start: 0.75rem;
+  width: 100%;
 }
 
 details > summary {
@@ -282,6 +343,13 @@ details > summary {
 table {
   /* min-width: 100%; */
   border-collapse: collapse;
+  position: relative;
+  height: 100%;
+}
+
+table thead {
+  position: sticky;
+  top: 0;
 }
 
 table th,
@@ -356,7 +424,7 @@ button[type="submit"] {
   width: 50ch;
   border-radius: 0.25rem;
   border: 1px solid var(--purple-5);
-  background: var(--purple-8);
+  background: var(--purple-9);
   color: var(--stone-0);
   font-weight: bold;
   box-shadow: var(--shadow-3);
@@ -366,7 +434,47 @@ button[type="submit"] {
 
 button[type="submit"]:hover,
 button[type="submit"]:focus {
-  background: var(--purple-5);
+  background: var(--purple-6);
   /* color: var(--stone-11); */
   box-shadow: var(--shadow-1);
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* gap: 1rem; */
+  margin-block-start: 2rem;
+  background: var(--blue-7);
+  width: fit-content;
+  padding-inline: 1rem;
+  padding-block-start: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.legend summary {
+  margin-block-end: 0.75rem;
+  color: var(--stone-0);
+}
+
+.legend small a {
+  color: var(--stone-0);
+}
+
+.legend ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+li.data-true {
+  background: var(--green-1);
+  color: var(--green-12);
+}
+
+li.data-false {
+  background: var(--gray-3);
+  color: var(--gray-12);
 }
