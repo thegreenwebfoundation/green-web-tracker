@@ -1,0 +1,41 @@
+name: "Run Greencheck"
+on:
+  schedule:
+    # https://crontab.guru/#0_10_*_*_4
+    # At 10:00 on Thursday.
+    - cron: "0 10 * * 4"
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: "Log level"
+        required: true
+        default: "warning"
+jobs:
+  createPullRequest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Greencheck script
+        run: |
+          npm ci
+          npm run greencheck
+
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Run weekly greencheck for all indexes.
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: greencheck/${{ github.run_id }}
+          delete-branch: true
+          title: "[AUTOMATED] Run weekly greencheck for all indexes"
+          body: |
+            - Run weekly greencheck for all indexes
+            - Save result files to `src/_data/checks` folder
+            - Auto-generated `.github/workflows/run-greencheck.yml` and `utils/runGreencheck.js`
+          draft: false
+          reviewers: fershad
