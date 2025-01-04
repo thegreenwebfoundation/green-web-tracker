@@ -47,6 +47,20 @@ h3:has(+ small) {
   margin-block-end: 0.75rem;
 }
 
+section + section {
+  margin-block-start: 4rem;
+}
+
+hr {
+  margin-block: 3rem;
+  border: none;
+  border-block: 1px solid currentColor;
+  width: 40%;
+  height: 0.5rem;
+  margin-inline: auto;
+  position: relative;
+}
+
 main {
   min-height: 95vh;
   position: relative;
@@ -477,4 +491,14 @@ li.data-true {
 li.data-false {
   background: var(--gray-3);
   color: var(--gray-12);
+}
+
+li.submit-your-own {
+  background: var(--purple-7);
+  color: var(--stone-0);
+}
+
+li.submit-your-own:hover {
+  background: var(--purple-1);
+  /* color: var(--stone-); */
 }

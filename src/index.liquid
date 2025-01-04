@@ -5,6 +5,7 @@ layout: "layouts/base.liquid"
   <div class="text">
     <h1>Green Web Tracker</h1>
     <p>Tracking the progress of the internet towards 100% fossil free hosting. Updated weekly.</p>
+    <p>View one of the <a href="#indexes">public indexes below</a>, or read more <a href="/about">about this project</a>.</p>
   </div>
   {% capture uniqueDomains %}
     {% getUniqueDomains %}
@@ -24,9 +25,11 @@ layout: "layouts/base.liquid"
   </aside>
 </section>
 
+{% comment %} <hr> {% endcomment %}
+
 <section id="indexes">
   <h2>Public Indexes</h2>
-  <p>A set of public indexes tracking various types of websites. These public lists are sourced from open datasets, and submitted by members of the community. Get involved and
+  <p>A set of public indexes covering various types of websites. These public lists are sourced from open datasets, and submitted by members of the community. Get involved and
     <a href="/submit">submit your own!</a>
   </p>
   <ul class="index-list">
@@ -45,7 +48,7 @@ layout: "layouts/base.liquid"
         </div>
       </li>
     {% endfor %}
-    <li style="--green-percentage:50%; --grey-percentage: 50%;">
+    <li style="--green-percentage:50%; --grey-percentage: 50%;" class="submit-your-own">
       <p class="title">
         <a href="/submit">Submit your own index</a>
       </p>
