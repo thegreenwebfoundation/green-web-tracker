@@ -1,0 +1,90 @@
+---
+layout: "layouts/base.liquid"
+title: "Submit an Index"
+---
+
+<section id="intro">
+  <h1>Submit an Index</h1>
+  <p>Learn more about submitting a public index to the Green Web Tracker.
+  </p>
+</section>
+
+<section>
+  <h2>What is an Index?</h2>
+  <p>An index is a list of public websites that you'd like to have tracked over time. They can represent organisations within the same industry or have other commonalities (e.g. they're created by the same agency, they are listed in the same stock market index, or something else).</p>
+  <p>Websites listed in an index are checked each week against the Green Web Foundation's Green Web Dataset. The check returns wether or not that website is hosted on a known, verified green hosting provider. Results for each index, and each domain, are shown on respective pages of this site allowing any changes to be seen over time. Learn more about why a website's green hosting status might change in the
+    <a href="/about#faq">FAQ</a>.</p>
+</section>
+
+<section>
+  <h2>Who should submit an index?</h2>
+  <p>Anyone can submit an index, although please be mindful of the following contribution conditions:</p>
+  <ul>
+    <li>Indexes should contain at least 10 domains.</li>
+    <li>Domains can be submitted across multiple indexes.</li>
+    <li>Once submitted, indexes and their results are public. If you want to keep a private index, you can do so in the
+      <a href="/my-index">"My Index"</a>
+      part of this site or by creating a fork of this project's source code.</li>
+    <li>Green Web Foundation will review all submitted indexes before adding them to this site. We reserve the right to edit or reject any submissions, and will provide reasoning explaining our decision in such cases.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>How to submit an index</h2>
+  <p>We prefer that new indexes are submitted by contributors through GitHub. For those who do not use GitHub, submissions can also be made by email.</p>
+
+  <h3>GitHub</h3>
+  <p>Follow the steps below to submit a new index:</p>
+  <ol>
+    <li>Fork the repository at for this project.</li>
+    <li>Create a new file in the
+      <code>src/indexes</code>
+      directory. The file should be named with the index's name, and have the extension
+      <code>.json</code>. For example, if you're creating an index for "My Industry", the file should be named
+      <code>my-industry.json</code>.</li>
+    <li>Copy the following template into the new file, and fill in the details for your index:</li>
+<pre>
+{
+    "name": "My Index",
+    "description": "A description of the index.",
+    "contributors": [
+        {
+        "name": "Your Name",
+        "github": "your-github-username"
+        }
+    ],
+    "sources": [
+        {
+            "name": "Source Name",
+            "url": "https://example.com"
+        }
+    ],
+    "sites": [
+        "example.com",
+        "example.org"
+    ],
+}
+</pre>
+    <li>Update the template with information about your index.</li>
+    <ul>
+      For example:
+      <li>name: "My Index"</li>
+      <li>description: "A description of the index."</li>
+      <li>contributors: Your name and GitHub username.</li>
+      <li>sources: Any sources you used to create the index. This is an optional field.</li>
+      <li>sites: The list of domains that you'd like to include in the index as an array of strings.</li>
+    </ul>
+    <li>Commit your changes to your fork.</li>
+    <li>Submit a pull request with your changes.</li>
+  </ol>
+
+  <h3>Email</h3>
+  <p>If you're unable to use GitHub, you can submit an index by email. Please send the following information to us <a href="https://www.thegreenwebfoundation.org/support-form">using the support form on our website</a>.</p>
+
+    <ul>
+        <li>Index name</li>
+        <li>Index description</li>
+        <li>Contributors: Your name</li>
+        <li>Sources: Any sources you used to create the index. This is an optional field.</li>
+        <li>Sites: The list of domains that you'd like to include in the index as an array of strings.</li>
+    </ul>
