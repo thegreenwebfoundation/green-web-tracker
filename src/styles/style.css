@@ -1,3 +1,7 @@
+html {
+  interpolate-size: allow-keywords;
+}
+
 body {
   font-family: var(--font-humanist);
   background-color: var(--stone-0);
@@ -437,7 +441,8 @@ button[type="submit"] {
   margin-inline: auto;
   width: 50ch;
   border-radius: 0.25rem;
-  border: 1px solid var(--purple-5);
+  /* border: 1px solid var(--purple-5); */
+  border: none;
   background: var(--purple-9);
   color: var(--stone-0);
   font-weight: bold;
@@ -460,7 +465,6 @@ button[type="submit"]:focus {
   align-items: flex-start;
   /* gap: 1rem; */
   margin-block-start: 2rem;
-  background: var(--blue-7);
   width: fit-content;
   padding-inline: 1rem;
   padding-block-start: 0.75rem;
@@ -470,10 +474,8 @@ button[type="submit"]:focus {
 .legend summary {
   margin-block-end: 0.75rem;
   color: var(--stone-0);
-}
-
-.legend small a {
-  color: var(--stone-0);
+  width: fit-content;
+  background: var(--blue-7);
 }
 
 .legend ul {
@@ -501,4 +503,24 @@ li.submit-your-own {
 li.submit-your-own:hover {
   background: var(--purple-1);
   /* color: var(--stone-); */
+}
+
+details + details {
+  margin-block-start: 0.75rem;
+  /* transition: margin 0.3s; */
+}
+
+details + details[open] {
+  /* margin-block-start: 1.25rem; */
+}
+
+details > summary {
+  cursor: pointer;
+  padding: 0.5rem;
+  background: var(--blue-7);
+  color: var(--stone-0);
+  border-radius: 0.25rem;
+  margin-block-end: 1rem;
+  font-size: var(--font-size-4);
+  width: fit-content;
 }
