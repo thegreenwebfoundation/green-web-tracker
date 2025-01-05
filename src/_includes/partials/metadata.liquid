@@ -1,15 +1,10 @@
+{% unless title %}
+  {% assign pageTitle = "Green Web Tracker" %}
+{% else %}
 {% capture pageTitle %}
-    {{title}} - {{site.title}}
+  {{title}} | Green Web Tracker
 {% endcapture%}
-{% if site.title == title %}
-  {% assign pageTitle = title %}
-{% endif %}
-
-{% assign siteTitle = site.title %}
-
-{% if metaTitle %}
-  {% assign pageTitle = metaTitle %}
-{% endif %}
+{% endunless %}
 
 {% unless description %}
   {% assign description = summary %}
