@@ -2,6 +2,10 @@ html {
   interpolate-size: allow-keywords;
 }
 
+:where(p, li) {
+  max-width: 80ch;
+}
+
 body {
   font-family: var(--font-humanist);
   background-color: var(--stone-0);
@@ -194,7 +198,7 @@ nav ul li.public {
 }
 
 nav ul li.public:hover {
-  background: var(--purple-8);
+  background: var(--blue-2);
   color: var(--stone-11);
   box-shadow: var(--shadow-1);
 }

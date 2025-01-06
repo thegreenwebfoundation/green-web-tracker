@@ -1,0 +1,71 @@
+---
+layout: "layouts/base.liquid"
+title: "About"
+description: "Learn more about the Green Web Tracker project."
+---
+
+<section>
+  <h1>About</h1>
+  <p>The Green Web Tracker project is an open-source initiative to track the green hosting status of public websites over time. The project is maintained by the Green Web Foundation, and based on data from the Green Web Dataset - the world's largest open dataset of verified green hosting providers.</p>
+</section>
+
+<section id="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <details>
+    <summary>
+      How is a website checked for green hosting status?
+    </summary>
+    <p>
+      Websites are checked against the Green Web Dataset using CO2.js - an open-source library maintained by the Green Web Foundation. Checks are run on a weekly basis via a GitHub action, before being uploaded to this website.
+    </p>
+    <p>Checks for each domain are currently performed based on IP matching. An explainer of how this works can be found in this FAQ on the Green Web Foundation's website -
+      <a href="https://www.thegreenwebfoundation.org/support/how-does-the-green-web-check-work/">How does the green web check work?</a>
+    </p>
+  </details>
+  <details>
+    <summary>
+      What do the "Green hosted", "No evidence found", and "Not checked" statuses mean?
+    </summary>
+    <ul>
+      <li>The
+        <b>"Green hosted"</b>
+        status means that a website is hosted on a known, verified green hosting provider.</li>
+      <li>The
+        <b>"No evidence found"</b>
+        status means that a website is not hosted on a known, verified green hosting provider.</li>
+      <li>The
+        <b>"Not checked"</b>
+        status means that a website has not been checked against the Green Web Dataset during a particular run of checks.</li>
+    </ul>
+  </details>
+  <details>
+    <summary>
+      Why might a website's green hosting status change?
+    </summary>
+    <p>
+      A website's green hosting status might change for a number of reasons. The most common reasons are:
+    </p>
+    <ul>
+      <li>The website has changed hosting providers.</li>
+      <li>The website began using a CDN that is not listed in the Green Web Dataset.</li>
+      <li>The website has changed IP address to one that is not listed in the Green Web Dataset.</li>
+      <li>The website's hosting provider has had their status in the Green Web Dataset changed. A more detailed explainer as to why this might happen can be found in this FAQ on the Green Web Foundation's website -
+        <a href="https://www.thegreenwebfoundation.org/support/my-hosting-provider-was-green-but-now-its-not-what-happened/">My hosting provider was green, but now it's not. What happened?</a>
+      </li>
+    </ul>
+  </details>
+  <details>
+    <summary>
+      How can I contribute to the Green Web Tracker project?
+    </summary>
+    <p>
+      The Green Web Tracker project is open-source and contributions are welcome. You can contribute to the project by submitting a new index of websites to be tracked, or by submitting a bug report or feature request on the project's GitHub repository.
+    </p>
+    <p>
+      More information on how to contribute can be found in the
+      <a href="/submit">Submit an Index</a>
+      section of this website.
+    </p>
+  </details>
+</section>
