@@ -1,12 +1,13 @@
 ---
 layout: "layouts/base.liquid"
-title: "Index: {{ index }}"
 pagination:
     data: "indexes"
     size: 1
     alias: "index"
 permalink: "/index/{{ index | slug }}/index.html"
-description: "View the results of the {{ index }} index on the Green Web Tracker."
+eleventyComputed:
+    title: "Index: {{ index }}"
+    description: "View the results of the {{ index }} index on the Green Web Tracker."
 ---
 {% assign content = indexes[index] %}
 

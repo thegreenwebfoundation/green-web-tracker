@@ -1,12 +1,13 @@
 ---
 layout: "layouts/base.liquid"
-title: "Domain: {{ domain }}"
 pagination:
     data: "domainsList"
     size: 1
     alias: "domain"
 permalink: "/domain/{{ domain | slug }}/index.html"
-description: "View the results for {{ domain }} on the Green Web Tracker."
+eleventyComputed:
+    title: "Domain: {{ domain }}"
+    description: "View the results for {{ domain }} on the Green Web Tracker."
 ---
 <h1>Domain: {{ domain }}</h1>
 
