@@ -50,7 +50,8 @@ description: "View the results of the {{ index }} index on the Green Web Tracker
         {% endfor %}
     </thead>
     <tbody>
-      {% for domain in content.sites %}
+      {% assign uniqueDomains = results | uniqueResultDomains %}
+      {% for domain in uniqueDomains %}
         <tr>
           <td class="domain">
             <a href="/domain/{{ domain | toHost | slug }}/">{{ domain }}</a>

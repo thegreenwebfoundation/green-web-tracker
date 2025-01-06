@@ -39,6 +39,7 @@ export default function(eleventyConfig) {
     });
 
     eleventyConfig.addAsyncFilter("getGreenStatus", async (result, site) => {
+
         let domain = site;
         try {
             domain = new URL(site).hostname;
@@ -46,7 +47,14 @@ export default function(eleventyConfig) {
             domain = site;
         }
 
+        // There's three conditions - green: true, green: false, and the domain not being in the results
+        if (result.data.find(data => data.url === domain) === undefined) {
+            return 'not-checked';
+        }
+
         const greenResults = result.data.filter(data => data.url === domain && data.green);
+
+        
         return greenResults.length > 0 ? true : false;
     });
     
@@ -184,6 +192,22 @@ export default function(eleventyConfig) {
         const uniqueResults = [...new Map(domainResults.map(item => [new Date(item.timestamp).toDateString(), item])).values()];
 
         return uniqueResults;
+    });
+
+    eleventyConfig.addAsyncFilter("uniqueResultDomains", async (results) => {
+        const data = results.flatMap(result => result.data).map(data => data.url).map(site => {
+            try {
+                return new URL(site).hostname
+            }
+            catch (error) {
+                return site;
+            }
+        });
+
+        const uniqueSites = [...new Set(data)];
+    
+
+        return uniqueSites;
     });
 
 
