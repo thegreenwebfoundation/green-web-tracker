@@ -223,8 +223,21 @@ nav ul li:focus a {
   color: var(--stone-11);
 }
 
+header nav,
+footer nav {
+  margin-block-start: 1rem;
+  margin-inline-start: auto;
+}
+
 nav ul li {
   box-shadow: var(--shadow-3);
+  flex: 1 0 auto;
+  justify-content: center;
+}
+
+nav ul {
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 a:has(svg) {
@@ -559,4 +572,13 @@ details > summary {
   margin-block-end: 1rem;
   font-size: var(--font-size-4);
   width: fit-content;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+  margin-inline-start: -2rem;
+  background: var(--stone-1);
+  border-radius: 0.25rem;
+  margin-block-start: 1rem;
 }
