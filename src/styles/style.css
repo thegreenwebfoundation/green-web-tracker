@@ -65,6 +65,20 @@ hr {
   position: relative;
 }
 
+a,
+a:visited {
+  font-weight: bold;
+  color: var(--link-color, var(--blue-7));
+  /* text-decoration-color: var(--link-color, var(--purple-7)); */
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--link-color, var(--purple-7));
+  text-decoration: none;
+}
+
 main {
   min-height: 95vh;
   position: relative;
@@ -73,7 +87,7 @@ main {
   max-width: var(--size-xl);
 }
 
-li {
+li[class] {
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;
   border: 1px solid var(--stone-12);
@@ -82,6 +96,10 @@ li {
   align-items: center;
   background: var(--stone-0);
   color: var(--stone-11);
+}
+
+li:not([class]) {
+  margin-block-end: 1rem;
 }
 
 header,
@@ -130,6 +148,7 @@ footer .wrapper {
   max-width: var(--size-xl);
   display: flex;
   margin: 0 auto;
+  --link-color: var(--stone-0);
 }
 
 header .wrapper {
@@ -137,8 +156,11 @@ header .wrapper {
   align-items: center;
 }
 footer .wrapper {
+  padding-block-start: 2rem;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.75rem;
 }
 
 header img,
@@ -159,38 +181,51 @@ footer img {
   overflow-wrap: break-word;
 }
 
-header nav ul {
+nav ul {
   display: flex;
   gap: 1rem;
   list-style: none;
 }
 
-header nav ul li.public {
+nav ul li.public {
   background: var(--blue-8);
   color: var(--stone-0);
   border: none;
 }
 
-header nav ul li.public:hover {
-  background: var(--blue-2);
+nav ul li.public:hover {
+  background: var(--purple-8);
   color: var(--stone-11);
   box-shadow: var(--shadow-1);
 }
 
-header nav ul li.private {
+nav ul li.private {
   background: var(--purple-8);
   color: var(--stone-0);
   border: none;
 }
 
-header nav ul li.private:hover {
+nav ul li.private:hover {
   background: var(--purple-2);
   color: var(--stone-11);
   box-shadow: var(--shadow-1);
 }
 
-header nav ul li {
+nav ul li:hover svg,
+nav ul li:focus svg,
+nav ul li:hover a,
+nav ul li:focus a {
+  color: var(--stone-11);
+}
+
+nav ul li {
   box-shadow: var(--shadow-3);
+}
+
+a:has(svg) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .skip-link {
@@ -281,12 +316,6 @@ header nav ul li {
   color: var(--stone-0);
 }
 
-.index-list li:hover {
-  box-shadow: var(--shadow-1);
-  background: var(--blue-1);
-  color: var(--stone-11);
-}
-
 #intro aside::before,
 .index-list li::before {
   content: "";
@@ -312,22 +341,18 @@ header nav ul li {
   top: calc(100% - 14px);
 }
 
-a,
-a:visited {
-  font-weight: bold;
-  color: currentColor;
-}
-
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
 .index-list .title:has(+ p) {
   font-size: var(--font-size-4);
   font-weight: bold;
   margin: 0;
   margin-block-start: 0.25rem;
+  --link-color: var(--stone-0);
+  text-decoration: underline;
+}
+
+.index-list li:hover .title:has(+ p) {
+  --link-color: var(--stone-11);
+  text-decoration: none;
 }
 
 .index-list .title:has(+ p) + p {
@@ -342,6 +367,12 @@ a:focus {
   border-block-start: 1px solid var(--stone-12);
   padding-block-start: 0.75rem;
   width: 100%;
+}
+
+.index-list li:hover {
+  box-shadow: var(--shadow-1);
+  background: var(--blue-1);
+  color: var(--stone-11);
 }
 
 details > summary {
