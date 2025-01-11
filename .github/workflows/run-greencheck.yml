@@ -38,4 +38,3 @@ jobs:
             - Save result files to `src/_data/checks` folder
             - Auto-generated `.github/workflows/run-greencheck.yml` and `utils/runGreencheck.js`
           draft: false
-          reviewers: fershad
