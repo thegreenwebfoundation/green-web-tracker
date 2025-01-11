@@ -582,3 +582,31 @@ pre {
   border-radius: 0.25rem;
   margin-block-start: 1rem;
 }
+
+.index-info > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contributor {
+  gap: 0.5rem;
+  align-items: center;
+  display: inline-flex;
+}
+
+.contributor img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.index-info {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-block-end: 1rem;
+}

@@ -13,22 +13,32 @@ eleventyComputed:
 
 <h1>Index: {{ content.name }}</h1>
 <p>{{ content.description }}</p>
-<small>Contributed by:
-  {% for contrib in content.contributors %}
-    <a href="https://github.com/{{ contrib.github }}">{{ contrib.name }}</a>
-    {% unless forloop.last %},
-    {% endunless %}
-  {% endfor %}
-  {% if content.sources.size > 0 %}
-    | Source:
-    {% for source in content.sources %}
-      <a href="{{ source.url }}">{{ source.name }}</a>
-      {% unless forloop.last %},
-      {% endunless %}
+<small class="index-info">
+  <div>
+    <b>Contributed by:</b>
+    {% for contrib in content.contributors %}
+        <a class="contributor" href="https://github.com/{{ contrib.github }}">
+        <img src="https://github.com/{{ contrib.github }}.png?size=60" alt="{{ contrib.name }} GitHub avatar" width="30" height="30">
+        {{ contrib.name }}
+        </a>
     {% endfor %}
+  </div>
+  {% if content.sources.size > 0 %}
+    <div>
+      {% if content.sources.size > 1 %}
+        <b>Sources:</b>
+      {% else %}
+        <b>Source:</b>
+      {% endif %}
+      {% for source in content.sources %}
+        <a href="{{ source.url }}">{{ source.name }}</a>
+      {% endfor %}
+    </div>
   {% endif %}
-  | <a href="https://github.com/thegreenwebfoundation/green-web-tracker/tree/main/src/_data/indexes/{{index}}.json">Edit this index</a>
 </small>
+<div>
+  <a href="https://github.com/thegreenwebfoundation/green-web-tracker/tree/main/src/_data/indexes/{{index}}.json">Edit this index</a>
+</div>
 
 <h2>Domains</h2>
 {% assign results = index | getIndexResults %}
