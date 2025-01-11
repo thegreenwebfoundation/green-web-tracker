@@ -45,7 +45,7 @@ eleventyComputed:
                 {% include 'partials/greenFlag.liquid' %}
             </td>
             <td><time datetime="{{result.timestamp}}">{{ result.timestamp | date_to_long_string }}</time></td>
-            <td>{{ result.data[0].hosted_by }}</td>
+            <td><a href="https://app.greenweb.org/directory/#{{ result.data[0].hosted_by_id }}" target="_blank">{{ result.data[0].hosted_by }}</a></td>
         </tr>
       {% endfor %}
     </tbody>
