@@ -24,7 +24,7 @@ eleventyComputed:
   </ul>
 </details>
 
-{% assign results = domain | getDomainResults %}
+{% assign results = domain | getDomainResults |  reverse %}
 
 {% include 'partials/legend.liquid' %}
 
