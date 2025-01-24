@@ -21,19 +21,19 @@ const runGreenCheck = async () => {
 
             console.log(`Checking ${filename}...`);
 
-            // // Check if the file has been checked before. Get all the result files for this file and sort by timestamp
-            // const previousResults = greenCheckResults.filter(({ value }) => value.for === filepath).sort((a, b) => {
-            //     return new Date(b.value.timestamp) - new Date(a.value.timestamp);
-            // }).shift();
+            // Check if the file has been checked before. Get all the result files for this file and sort by timestamp
+            const previousResults = greenCheckResults.filter(({ value }) => value.for === filepath).sort((a, b) => {
+                return new Date(b.value.timestamp) - new Date(a.value.timestamp);
+            }).shift();
 
-            // // Check if the file's timestamp is within the last week
-            // const lastWeek = new Date();
-            // lastWeek.setDate(lastWeek.getDate() - 7);
-            // const fileTimestamp = new Date(previousResults?.value.timestamp || 0);
-            // if (fileTimestamp > lastWeek) {
-            //     console.log(`Skipping ${filename} as it was checked less than a week ago`);
-            //     return [];
-            // }
+            // Check if the file's timestamp is within the last week
+            const lastWeek = new Date();
+            lastWeek.setDate(lastWeek.getDate() - 7);
+            const fileTimestamp = new Date(previousResults?.value.timestamp || 0);
+            if (fileTimestamp > lastWeek) {
+                console.log(`Skipping ${filename} as it was checked less than a week ago`);
+                return [];
+            }
 
         // Flatten the array of arrays
         const sitesArray = sites.flat().map((site) => {
