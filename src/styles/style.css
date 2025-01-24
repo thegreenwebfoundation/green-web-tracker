@@ -233,6 +233,24 @@ nav ul li {
   box-shadow: var(--shadow-3);
   flex: 1 0 auto;
   justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+nav ul li:not([class]) {
+  margin: 0;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  color: var(--stone-11);
+  box-shadow: none;
+}
+
+nav ul li a:not([class]) {
+  color: currentColor;
+}
+
+nav ul li a:not([class]):hover {
+  text-decoration: underline;
 }
 
 nav ul {
@@ -301,6 +319,10 @@ a:has(svg) {
   padding-block-end: 2rem;
   overflow: hidden;
   box-shadow: var(--shadow-3);
+}
+
+#intro aside h2 {
+  color: currentColor;
 }
 
 .index-list {
