@@ -554,6 +554,7 @@ button[type="submit"]:focus {
   gap: 1rem;
   list-style: none;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 li.data-true {
