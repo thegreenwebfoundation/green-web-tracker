@@ -6,8 +6,8 @@ pagination:
     alias: "index"
 permalink: "/index/{{ index | slug }}/index.html"
 eleventyComputed:
-    title: "Index: {{ index }}"
-    description: "View the results of the {{ index }} index on the Green Web Tracker."
+    title: "Index: {{ indexes[index].name }}"
+    description: "View the results of the {{ indexes[index].name }} index on the Green Web Tracker."
 ---
 {% assign content = indexes[index] %}
 
