@@ -610,3 +610,20 @@ pre {
   flex-wrap: wrap;
   margin-block-end: 1rem;
 }
+
+.beta {
+  position: relative;
+}
+
+.beta:after {
+  content: "Beta";
+  padding: 0.15rem 0.25rem;
+  background: var(--purple-7);
+  color: var(--stone-0);
+  border-radius: 0.25rem;
+  font-size: var(--font-size-0);
+  font-weight: bold;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
