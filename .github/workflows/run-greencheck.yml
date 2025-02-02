@@ -1,9 +1,10 @@
 name: "Run Greencheck"
 on:
   schedule:
-    # https://crontab.guru/#0_10_*_*_4
-    # At 10:00 on Thursday.
-    - cron: "0 10 * * 4"
+    # https://crontab.guru/#0_10_*_*_*
+    # At 10:00 daily.
+    # As more indexes get added, this will spread out the running of checks
+    - cron: "0 10 * * *"
   workflow_dispatch:
     inputs:
       logLevel:
