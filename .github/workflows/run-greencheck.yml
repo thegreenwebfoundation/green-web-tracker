@@ -33,9 +33,10 @@ jobs:
           signoff: false
           branch: greencheck/${{ github.run_id }}
           delete-branch: true
-          title: "[AUTOMATED] Run weekly greencheck for all indexes"
+          title: "[AUTOMATED] Run daily greencheck for indexes"
           body: |
-            - Run weekly greencheck for all indexes
+            - Run daily greencheck for indexes
+            - Will return results for any indexes that have not been checked in the last week
             - Save result files to `src/_data/checks` folder
             - Auto-generated `.github/workflows/run-greencheck.yml` and `utils/runGreencheck.js`
           draft: false
