@@ -26,12 +26,12 @@ const runGreenCheck = async () => {
                 return new Date(b.value.timestamp) - new Date(a.value.timestamp);
             }).shift();
 
-            // Check if the file's timestamp is within the last week
+            // Check if the file's timestamp is within the last two weeks
             const lastWeek = new Date();
-            lastWeek.setDate(lastWeek.getDate() - 7);
+            lastWeek.setDate(lastWeek.getDate() - 14);
             const fileTimestamp = new Date(previousResults?.value.timestamp || 0);
             if (fileTimestamp > lastWeek) {
-                console.log(`Skipping ${filename} as it was checked less than a week ago`);
+                console.log(`Skipping ${filename} as it was checked in the past two weeks.`);
                 return [];
             }
 
