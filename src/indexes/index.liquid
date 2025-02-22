@@ -35,6 +35,10 @@ eleventyComputed:
       {% endfor %}
     </div>
   {% endif %}
+  <div>
+    <b>Created:</b>
+    {{ content.created | date: "%e %b '%y" }}
+  </div>
 </small>
 <div>
   <a href="https://github.com/thegreenwebfoundation/green-web-tracker/tree/main/src/_data/indexes/{{index}}.json">Edit this index</a>

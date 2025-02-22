@@ -1,6 +1,7 @@
 {
   "name": "Third-party Ad Domains",
   "description": "Domains used by online advertising networks for either serving or monitoring ad content.",
+  "created": "2025-01-01",
   "sites": [
     "adservice.google.com",
     "adservice.google.com.au",

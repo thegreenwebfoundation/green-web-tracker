@@ -1,6 +1,7 @@
 {
   "name": "Third-party Video Domains",
   "description": "Domains used enable video player and streaming functionality.",
+  "created": "2025-01-01",
   "sites": [
     "youtube.com",
     "ggpht.com",

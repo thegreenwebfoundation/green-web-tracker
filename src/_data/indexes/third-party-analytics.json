@@ -1,6 +1,7 @@
 {
   "name": "Third-party Analytics Domains",
   "description": "Domains used by online analytics services to measure or track user behaviour.",
+  "created": "2025-01-01",
   "sites": [
     "google-analytics.com",
     "urchin.com",

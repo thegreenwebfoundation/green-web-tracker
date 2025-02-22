@@ -1,6 +1,7 @@
 {
     "name": "Moz Top 500",
     "description": "A list of the top 500 websites according to SEO tooling provider Moz.",
+    "created": "2025-01-01",
     "sites": [
         "www.blogger.com",
         "youtube.com",
