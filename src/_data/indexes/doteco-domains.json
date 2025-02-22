@@ -1,6 +1,7 @@
 {
     "name": ".eco Domains",
     "description": "A list of all active .eco domains from the .eco domain registry.",
+    "created": "2025-02-22",
     "contributors": [
         {
             "name": "Owen Rogers",
