@@ -18,6 +18,7 @@ Learn more at [https://tracker.greenweb.org/about](https://tracker.greenweb.org/
 {
     "name": "My Index",
     "description": "A description of the index.",
+    "created": "YYYY-MM-DD",
     "contributors": [
         {
         "name": "Your Name",
@@ -41,6 +42,7 @@ Descriptions of each key is below:
 
 - `name`: The human readable name of your index
 - `description`: A brief description of what this index tracks
+- `created`: The date you created the index in the format YYYY-MM-DD.
 - `contributors`: Your name and GitHub username
 - `sources`: (Optional) Any sources you used to create the index
 - `sites`: Array of domain names to track
