@@ -73,7 +73,8 @@ eleventyComputed:
           </td>
           {% for result in results %}
             {% assign greenFlag = result | getGreenStatus: domain %}
-            <td data-green="{{ greenFlag }}" title="Domain checked as {{ greenFlag }} on ...">
+            {% capture greenHosted %}{% case greenFlag %}{% when true %}hosted green{% when false %}not hosted green{% else %}not checked{% endcase %}{% endcapture %}
+            <td data-green="{{ greenFlag }}" title="{{ domain }} is {{ greenHosted }} as of {{ result.timestamp | date: "%e %b '%y" }}">
               {% include 'partials/greenFlag.liquid' %}
             </td>
           {% endfor %}
