@@ -1,6 +1,6 @@
 {
     "name": "Domain name retailers",
-    "description": "A list of all domain name retailers that may also provide DNS, email and hosting services.",
+    "description": "Domain name registrars and web hosting providers.",
     "created": "2025-02-26",
     "sites": [
         "101domain.com",
@@ -72,6 +72,7 @@
         "greenhost.net",
         "greenwebspace.com",
         "helloly.com",
+        "hetzner.com",
         "hospedajeydominios.com",
         "hostarmada.com",
         "hosterion.com",
