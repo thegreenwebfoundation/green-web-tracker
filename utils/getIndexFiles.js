@@ -1,7 +1,7 @@
 import fg from 'fast-glob';
 const dev = process.env.ELEVENTY_RUN_MODE === 'serve';
 const trackedIndex = process.env.TRACK_INDEX;
-console.log('getIndexFiles - trackedIndex', trackedIndex)
+
 export const getIndexFiles = async (dataDir = "_data") => {
     try {
         let filesToCheck = await fg(`src/${dataDir}/indexes/*.json`);
