@@ -6,6 +6,8 @@ import path from 'path'
 import {getResultFiles} from './getResultFiles.js'
 import {getIndexFiles} from './getIndexFiles.js'
 
+const trackedIndex = process.env.TRACK_INDEX;
+
 const runGreenCheck = async () => {
     try {
         const indexFiles = await getIndexFiles();
@@ -30,7 +32,7 @@ const runGreenCheck = async () => {
             const lastWeek = new Date();
             lastWeek.setDate(lastWeek.getDate() - 14);
             const fileTimestamp = new Date(previousResults?.value.timestamp || 0);
-            if (fileTimestamp > lastWeek) {
+            if (fileTimestamp > lastWeek && trackedIndex !== filename) {
                 console.log(`Skipping ${filename} as it was checked in the past two weeks.`);
                 return [];
             }

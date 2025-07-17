@@ -56,10 +56,19 @@ After cloning or forking this repository, run the following commands to install 
 
 ```shell
 npm install
-npm run start
+npm start
 ```
 
 Please note that for performance reasons, in developement only data for the first 10 domains of any index will be used. Other domains will show a "not checked" result.
+
+If you would like to fully build and test a specific index, you can use the `TRACK_INDEX` environment variable:
+
+```shell
+TRACK_INDEX your-index-name npm run greenweb
+TRACK_INDEX your-index-name npm start
+```
+
+where `your-index-name` matches the filename of your index without the `.json` file extension.
 
 ## Self-hosting
 
