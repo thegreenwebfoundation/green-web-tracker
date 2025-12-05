@@ -81,6 +81,7 @@ const runGreenCheck = async () => {
         .flatMap((result) => result.value)
         .map((batch) => {
           // Convert object of objects into array of objects
+          console.log(batch);
           return Object.entries(batch).map(
             ([url, hosted_by, hosted_by_id, green, modified, data]) => ({
               url: data?.url || url,
