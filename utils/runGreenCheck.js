@@ -1,115 +1,118 @@
-import { hosting } from '@tgwf/co2'
-import pThrottle from 'p-throttle'
-import { writeFile, mkdir } from 'fs/promises'
-import path from 'path'
+import { hosting } from "@tgwf/co2";
+import pThrottle from "p-throttle";
+import { writeFile, mkdir } from "fs/promises";
+import path from "path";
 
-import {getResultFiles} from './getResultFiles.js'
-import {getIndexFiles} from './getIndexFiles.js'
+import { getResultFiles } from "./getResultFiles.js";
+import { getIndexFiles } from "./getIndexFiles.js";
 
 const trackedIndex = process.env.TRACK_INDEX;
 
 const runGreenCheck = async () => {
-    try {
-        const indexFiles = await getIndexFiles();
-        const resultsFiles = await getResultFiles();
+  try {
+    const indexFiles = await getIndexFiles();
+    const resultsFiles = await getResultFiles();
 
-        const indexesToCheck = await Promise.allSettled(indexFiles);
-        const greenCheckResults = await Promise.allSettled(resultsFiles);
+    const indexesToCheck = await Promise.allSettled(indexFiles);
+    const greenCheckResults = await Promise.allSettled(resultsFiles);
 
+    indexesToCheck.forEach(async ({ value }) => {
+      const { filepath, filename, sites } = value;
 
-        indexesToCheck.forEach(async ({value}) => {
+      console.log(`Checking ${filename}...`);
 
-            const { filepath, filename, sites } = value;
+      // Check if the file has been checked before. Get all the result files for this file and sort by timestamp
+      const previousResults = greenCheckResults
+        .filter(({ value }) => value.for === filepath)
+        .sort((a, b) => {
+          return new Date(b.value.timestamp) - new Date(a.value.timestamp);
+        })
+        .shift();
 
-            console.log(`Checking ${filename}...`);
+      // Check if the file's timestamp is within the last two weeks
+      const lastWeek = new Date();
+      lastWeek.setDate(lastWeek.getDate() - 14);
+      const fileTimestamp = new Date(previousResults?.value.timestamp || 0);
+      if (fileTimestamp > lastWeek && trackedIndex !== filename) {
+        console.log(
+          `Skipping ${filename} as it was checked in the past two weeks.`,
+        );
+        return [];
+      }
 
-            // Check if the file has been checked before. Get all the result files for this file and sort by timestamp
-            const previousResults = greenCheckResults.filter(({ value }) => value.for === filepath).sort((a, b) => {
-                return new Date(b.value.timestamp) - new Date(a.value.timestamp);
-            }).shift();
+      // Flatten the array of arrays
+      const sitesArray = sites.flat().map((site) => {
+        try {
+          return new URL(site).hostname;
+        } catch (error) {
+          return site;
+        }
+      });
 
-            // Check if the file's timestamp is within the last two weeks
-            const lastWeek = new Date();
-            lastWeek.setDate(lastWeek.getDate() - 14);
-            const fileTimestamp = new Date(previousResults?.value.timestamp || 0);
-            if (fileTimestamp > lastWeek && trackedIndex !== filename) {
-                console.log(`Skipping ${filename} as it was checked in the past two weeks.`);
-                return [];
-            }
+      // Group sites into batches of 3
+      const sitesBatched = sitesArray.reduce((acc, site, i) => {
+        const index = Math.floor(i / 20);
+        if (!acc[index]) {
+          acc[index] = [];
+        }
+        acc[index].push(site);
+        return acc;
+      }, []);
 
-        // Flatten the array of arrays
-        const sitesArray = sites.flat().map((site) => {
-            try {
-                return new URL(site).hostname
-            } catch (error) {
-                return site;
-            }
-        });
+      // Run the check for each site
+      const checkSite = pThrottle({ limit: 1, interval: 1000 });
 
-        // Group sites into batches of 3
-        const sitesBatched = sitesArray.reduce((acc, site, i) => {
-            const index = Math.floor(i / 20);
-            if (!acc[index]) {
-                acc[index] = [];
-            }
-            acc[index].push(site);
-            return acc;
-        }, []);
+      const throttled = checkSite(async (sites) => {
+        const results = await hosting(sites, { verbose: true });
+        // console.log('Throttled results:', results);
+        return results;
+      });
 
-        // Run the check for each site
-        const checkSite = pThrottle({ limit: 1, interval: 1000});
+      const greenDomains = [];
 
-        const throttled = checkSite(async (sites) => {
-            const results = await hosting(sites, { verbose: true});
-            // console.log('Throttled results:', results);
-            return results;
-        });
+      sitesBatched.forEach(async (sites) => {
+        greenDomains.push(throttled(sites));
+      });
 
-        const greenDomains = [];
+      const results = await Promise.allSettled(greenDomains);
+      const timestamp = new Date().toISOString();
+      const greenResults = results
+        .filter((result) => result.status === "fulfilled")
+        .map((result) => result.value)
+        .map((batch) => {
+          // Convert object of objects into array of objects
+          // console.log(batch);
+          return Object.entries(batch).map(([url, data]) => ({
+            url: data.url,
+            hosted_by: data.hosted_by,
+            green: data.green,
+            hosted_by_id: data.hosted_by_id,
+            modified: data.modified,
+          }));
+        })
+        .flat();
 
-        sitesBatched.forEach(async (sites) => {
-            greenDomains.push(throttled(sites));
-        });
+      // Ensure the greenChecks directory exists
+      const checksDir = path.join(process.cwd(), "src/_data/checks");
+      await mkdir(checksDir, { recursive: true });
 
-        const results = await Promise.allSettled(greenDomains);
-        const timestamp = new Date().toISOString();
-        const greenResults = results
-            .filter(result => result.status === 'fulfilled')
-            .map(result => result.value)
-            .flat()
-            .map(batch => {
-                // Convert object of objects into array of objects
-                return Object.entries(batch).map(([url, data]) => ({
-                    url: data.url,
-                    hosted_by: data.hosted_by,
-                    green: data.green,
-                    hosted_by_id: data.hosted_by_id,
-                    modified: data.modified,
-                }));
-            })
-            .flat();
-        
-        // Ensure the greenChecks directory exists
-        const checksDir = path.join(process.cwd(), 'src/_data/checks');
-        await mkdir(checksDir, { recursive: true });
-        
-        const outputData = {
-            timestamp,
-            sourceFile: filepath,
-            data: greenResults,
-            greenDomains: greenResults.filter(result => result.green).length,
-            totalSites: greenResults.length,
-        };
+      const outputData = {
+        timestamp,
+        sourceFile: filepath,
+        data: greenResults,
+        greenDomains: greenResults.filter((result) => result.green).length,
+        totalSites: greenResults.length,
+      };
 
-        const fileName = `green_${filename}_${timestamp.replace(/[:.]/g, '-')}.json`;
-        const outputPath = path.join(checksDir, fileName);
-        
-        await writeFile(outputPath, JSON.stringify(outputData));
-        return greenResults;
-        });
-    } catch (error) {
-        console.error('Error running green check:', error);
-    }
-}
+      const fileName = `green_${filename}_${timestamp.replace(/[:.]/g, "-")}.json`;
+      const outputPath = path.join(checksDir, fileName);
+
+      await writeFile(outputPath, JSON.stringify(outputData));
+      return greenResults;
+    });
+  } catch (error) {
+    console.error("Error running green check:", error);
+  }
+};
 
 runGreenCheck();
