@@ -78,17 +78,18 @@ const runGreenCheck = async () => {
       const timestamp = new Date().toISOString();
       const greenResults = results
         .filter((result) => result.status === "fulfilled")
-        .map((result) => result.value)
+        .flatMap((result) => result.value)
         .map((batch) => {
           // Convert object of objects into array of objects
-          // console.log(batch);
-          return Object.entries(batch).map(([url, data]) => ({
-            url: data.url,
-            hosted_by: data.hosted_by,
-            green: data.green,
-            hosted_by_id: data.hosted_by_id,
-            modified: data.modified,
-          }));
+          return Object.entries(batch).map(
+            ([url, hosted_by, hosted_by_id, green, modified, data]) => ({
+              url: data?.url || url,
+              hosted_by: data?.hosted_by || hosted_by,
+              green: data?.green || green,
+              hosted_by_id: data?.hosted_by_id || hosted_by_id,
+              modified: data?.modified || modified,
+            }),
+          );
         })
         .flat();
 
