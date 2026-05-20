@@ -1,6 +1,6 @@
 # Green Web Tracker
 
-Tracking the progress of the internet towards 100% fossil free hosting. Updated every two weeks.
+Tracking the progress of the internet towards 100% fossil free hosting. Updated every month.
 
 ## Overview
 

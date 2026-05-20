@@ -29,13 +29,13 @@ const runGreenCheck = async () => {
         })
         .shift();
 
-      // Check if the file's timestamp is within the last two weeks
+      // Check if the file's timestamp is within the last four weeks
       const lastWeek = new Date();
-      lastWeek.setDate(lastWeek.getDate() - 14);
+      lastWeek.setDate(lastWeek.getDate() - 28);
       const fileTimestamp = new Date(previousResults?.value.timestamp || 0);
       if (fileTimestamp > lastWeek && trackedIndex !== filename) {
         console.log(
-          `Skipping ${filename} as it was checked in the past two weeks.`,
+          `Skipping ${filename} as it was checked in the past four weeks.`,
         );
         return [];
       }
@@ -78,21 +78,18 @@ const runGreenCheck = async () => {
       const timestamp = new Date().toISOString();
       const greenResults = results
         .filter((result) => result.status === "fulfilled")
-        .flatMap((result) => result.value)
-        .map((batch) => {
-          // Convert object of objects into array of objects
-          // console.log(batch);
-          return Object.entries(batch).map(
-            ([url, hosted_by, hosted_by_id, green, modified, data]) => ({
-              url: data?.url || url,
-              hosted_by: data?.hosted_by || hosted_by,
-              green: data?.green || green,
-              hosted_by_id: data?.hosted_by_id || hosted_by_id,
-              modified: data?.modified || modified,
-            }),
-          );
+        .map((result) => result.value)
+        .flat()
+        .map((result) => {
+          return {
+            url: result?.url,
+            hosted_by: result?.hosted_by,
+            green: result?.green,
+            hosted_by_id: result?.hosted_by_id,
+            modified: result?.modified,
+          };
         })
-        .flat();
+        .filter((result) => result?.url);
 
       // Ensure the greenChecks directory exists
       const checksDir = path.join(process.cwd(), "src/_data/checks");
